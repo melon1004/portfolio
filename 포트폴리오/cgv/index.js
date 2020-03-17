@@ -45,14 +45,8 @@ $('.slider-1 > .side-btns > div').click(function () {
 });
 
 setInterval(function () {
-    $('.slider-1 > .side-btns > div').eq(1).click();
+    //$('.slider-1 > .side-btns > div').eq(1).click();
 }, 3000);
-
-
-
-
-
-
 
 function ProdBox1__updateMenuBox1LiActive() {
     var currentItemNo = $('.prod-box-1 > .my-carousel-box-1 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item.active > .item').attr('data-no');
@@ -84,7 +78,6 @@ $('.prod-box-1 > .my-carousel-box-1 > .owl-carousel').owlCarousel({
     loop: true,
     margin: 0,
     nav: true,
-    nav: false,
     responsive: {
         0: {
             items: 4
