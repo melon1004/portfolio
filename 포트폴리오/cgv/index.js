@@ -78,6 +78,7 @@ $('.prod-box-1 > .my-carousel-box-1 > .owl-carousel').owlCarousel({
     loop: true,
     margin: 0,
     nav: true,
+    nav:false,
     responsive: {
         0: {
             items: 4
