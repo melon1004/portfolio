@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>cgv 모작</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+
+    <div class="ttop"></div>
+
+    <div class="menu-bar relative con text-align-center line-height-0-ch-only">
+        <nav class="menu-1 absolute-left absolute-middle">
+            <ul class="row">
+                <li class="cell"><a href="#"><img src="https://www.lottecinema.co.kr/NLCHS/Content/images/icon/gnb_facebook_wht.png" alt="">좋아요</a></li>
+                <li class="cell"><a href="#"><img src="https://www.lottecinema.co.kr/NLCHS/Content/images/icon/gnb_youtube_wht.png" alt="">구독하기</a></li>
+            </ul>
+        </nav>
+        <a class="logo inline-block" href="http://vivienne.kr/" target="_blank"><img src="https://waifu2x.booru.pics/outfiles/fcaa603290eb3003ea6a480a28c7a27120e8e83a_s1_n2.png" alt="" class="block"></a>
+        <form class="search-box absolute-right absolute-middle">
+            <ul class="row">
+
+                <li class="cell"><a href="#">멤버십</a></li>
+                <li class="cell"><a href="#">고객센터</a></li>
+                <li class="cell"><a href="#">로그인</a></li>
+            </ul>
+        </form>
+    </div>
+
+
+
+
+    <div class="top-bar relative con-min-width">
+        <nav class="menu-box-1 text-align-center line-height-0-ch-only con">
+            <ul class="row inline-block">
+                <li class="cell">
+                    <a href="#" class="block">영화</a>
+                    <div>
+                        <div class="menu-2 text-align-center line-height-0-ch-only">
+                            <div class="inline-block">
+                                <ul class="row">
+                                    <li class="cell">
+                                        <a href="#">무비차트</a>
+                                    </li>
+                                    <li class="cell">
+                                        <a href="#">HD 트레일러</a>
+                                    </li>
+                                    <li class="cell">
+                                        <a href="#">무비파인더</a>
+                                    </li>
+                                    <li class="cell">
+                                        <a href="#">CGV 아트 하우스</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <a href="#" class="block">예매</a>
+                    <div>
+                        <div class="menu-2 text-align-center line-height-0-ch-only">
+                            <div class="inline-block">
+                                <ul class="row">
+                                    <li class="cell">
+                                        <a href="#">빠른예매</a>
+                                    </li>
+                                    <li class="cell">
+                                        <a href="#">상영시간표</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <a href="#" class="block">극장</a>
+                    <div>
+                        <div class="menu-2 text-align-center line-height-0-ch-only">
+                            <div class="inline-block">
+                                <ul class="row">
+                                    <li class="cell">
+                                        <a href="#">CGV 극장</a>
+                                    </li>
+                                    <li class="cell">
+                                        <a href="#">특별관</a>
+                                    </li>
+                                    <li class="cell">
+                                        <a href="#">CLUB 서비스</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <a href="#" class="block">이벤트 &amp; 컬처</a>
+                    <div>
+                        <div class="menu-2 text-align-center line-height-0-ch-only">
+                            <div class="inline-block">
+                                <ul class="row">
+                                    <li class="cell">
+                                        <a href="#">이벤트</a>
+                                    </li>
+                                    <li class="cell">
+                                        <a href="#">기프트샵</a>
+                                    </li>
+                                    <li class="cell">
+                                        <a href="#">매거진</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <nav class="menu-box-2 absolute-right absolute-middle">
+            <ul class="row ">
+                <li class="cell"><a href="#" class="block"><img src="https://www.lottecinema.co.kr/NLCHS/Content/images/icon/nav_side_my_wht.png">&nbsp;회원가입</a></li>
+                <li class="cell"><a href="#" class="block"><img src="https://www.lottecinema.co.kr/NLCHS/Content/images/icon/nav_side_reserve_wht.png">&nbsp;바로예매</a></li>
+                <li class="cell"><a href="#" class="block"><img src="https://www.lottecinema.co.kr/NLCHS/Content/images/icon/nav_side_all_wht.png"></a></li>
+            </ul>
+        </nav>
+    </div>
+    </div>
+
+
+
+
+    <div class="slider-1">
+        <div class="slides">
+            <div class="active" style="background-image:url(https://caching2.lottecinema.co.kr/lotte_image/2020/1917/0211/1917_1920774.jpg);"></div>
+            <div style="background-image:url(https://caching2.lottecinema.co.kr/lotte_image/2020/HonestCandidate/0212/HonestCandidate_1920774.jpg);"></div>
+            <div style="background-image:url(https://caching2.lottecinema.co.kr/lotte_image/2020/Sheep/0219/Sheep_1920774.jpg);"></div>
+            <div style="background-image:url(https://caching2.lottecinema.co.kr/lotte_image/2020/InvisibleMan/0214/InvisibleMan_1920774.jpg);"></div>
+            <div style="background-image:url(https://caching2.lottecinema.co.kr/lotte_image/2020/TimetoHunt/TimetoHunt_1920774.jpg);"></div>
+        </div>
+        <div class="page-btns">
+            <div class="active"></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="side-btns">
+            <div>
+                <span>〈</span>
+            </div>
+            <div>
+                <span>〉</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="prod-box-1">
+
+        <div class="menu-box-1 text-align-center line-height-0-ch-only">
+            <ul class="row inline-block">
+                <li class="cell dd"><a href="#" class="block">박스오피스순</a></li>
+                <li class="cell dc"><a href="#" class="block">&nbsp;．&nbsp;누적관객순</a></li>
+                <li class="cell"><a href="#" class="block">&nbsp;．&nbsp;메가스코어순</a></li>
+            </ul>
+        </div>
+
+        <div class="my-carousel-box-1 con">
+            <div class="owl-carousel owl-theme">
+                <div class="item" data-no="1">
+                    <div class="img-box" style="background-image:url(https://img.megabox.co.kr/SharedImg/2020/02/12/HfBNyNAVc9oEmh7veJ27GuspWVIKdFWg_316.jpg);"></div>
+                    <div class="sun">
+                        <div>[모든 것은 돈 가방과 함께 시작되었다.]<br><br>사라진 애인 때문에 사채 빚에 시달리며 한 탕을 꿈꾸는 태영.<br>아르바이트로 가족의 생계를 이어가는 가장 중만.</div>
+                        <div>
+                            <div class="pre cell">
+                                <p class="tit cell">기대평</p>
+                                <p class="number">8.5</p>
+                            </div>
+                            <span class="sign"> 〉</span>
+                            <div class="pree cell-right">
+                                <p class="tit cell-right">관람평</p>
+                                <p class="number">7.7</p>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="">
+                        <li class="cell">
+                            <a href="#" class="g">
+                                <h4>♡&nbsp;&nbsp;869</h4>
+                            </a>
+                            <a href="#" class="t">
+                                <h4>♥&nbsp;&nbsp;869</h4>
+                            </a>
+                        </li>
+                        <li class="cell">
+                            <a href="#">
+                                <h4>예매</h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item" data-no="2">
+                    <div class="img-box" style="background-image:url(https://img.megabox.co.kr/SharedImg/2020/02/21/IyeZJvAzV3QgEoW4F7HzdS97zfLYfcni_316.jpg);"></div>
+                    <div class="sun">
+                        <div>두 명의 병사, 하나의 미션!<br>그들이 싸워야 할 것은 적이 아니라 시간이었다!<br><br>제1차 세계대전이 한창인 1917년. <br>독일군에 의해 모든 통신망이</div>
+                        <div>
+                            <div class="pre cell">
+                                <p class="tit cell">기대평</p>
+                                <p class="number">8.3</p>
+                            </div>
+                            <span class="sign"> 〉</span>
+                            <div class="pree cell-right">
+                                <p class="tit cell-right">관람평</p>
+                                <p class="number">8.7</p>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="">
+                        <li class="cell">
+                            <a href="#" class="g">
+                                <h4>♡&nbsp;&nbsp;1k</h4>
+                            </a>
+                            <a href="#" class="t">
+                                <h4>♥&nbsp;&nbsp;1k</h4>
+                            </a>
+                        </li>
+                        <li class="cell">
+                            <a href="">
+                                <h4>예매</h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item" data-no="3">
+                    <div class="img-box" style="background-image:url(https://img.megabox.co.kr/SharedImg/2020/02/12/8h3sIafHZ4V9auz4WwxE0i9zJkguGEq0_316.jpg);"></div>
+                    <div class="sun">
+                        <div>그날, 우리는 놈의 사냥감이 되었다<br><br>희망 없는 도시, 감옥에서 출소한 ‘준석’(이제훈)은 가족 같은 친구들 ‘장호’(안재홍)와 ‘기훈’(최우식)</div>
+                        <div>
+                            <div class="pre cell">
+                                <p class="tit cell">기대평</p>
+                                <p class="number">9.3</p>
+                            </div>
+                            <span class="sign"> 〉</span>
+                            <div class="pree cell-right">
+                                <p class="tit cell-right">관람평</p>
+                                <p class="number">0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="">
+                        <li class="cell">
+                            <a href="#" class="g">
+                                <h4>♡&nbsp;&nbsp;286</h4>
+                            </a>
+                            <a href="#" class="t">
+                                <h4>♥&nbsp;&nbsp;286</h4>
+                            </a>
+                        </li>
+                        <li class="cell">
+                            <a href="">
+                                <h4>예매</h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item" data-no="4">
+                    <div class="img-box" style="background-image:url(https://img.megabox.co.kr/SharedImg/asis/system/mop/poster/2020/45/FE3E8F-2BF8-4720-8A56-E625A3326173.large.jpg);"></div>
+                    <div class="sun">
+                        <div>어제까진 뻥쟁이, 오늘부턴 정직한 후보?!<br><br>거짓말이 제일 쉬운 3선 국회의원 ‘주상숙’에게 청천벽력이 떨어진다.<br>하루아침에 거짓말은 1도</div>
+                        <div>
+                            <div class="pre cell">
+                                <p class="tit cell">기대평</p>
+                                <p class="number">8.4</p>
+                            </div>
+                            <span class="sign"> 〉</span>
+                            <div class="pree cell-right">
+                                <p class="tit cell-right">관람평</p>
+                                <p class="number">8.4</p>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="">
+                        <li class="cell">
+                            <a href="#" class="g">
+                                <h4>♡&nbsp;&nbsp;1.1k</h4>
+                            </a>
+                            <a href="#" class="t">
+                                <h4>♥&nbsp;&nbsp;1.1k</h4>
+                            </a>
+                        </li>
+                        <li class="cell">
+                            <a href="">
+                                <h4>예매</h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item" data-no="5">
+                    <div class="img-box" style="background-image:url(https://img.megabox.co.kr/SharedImg/asis/system/mop/poster/2019/37/FC0155-CBED-48D6-B4F8-0F686D79CE86.large.jpg);"></div>
+                    <div class="sun">
+                        <div>내 마법의 힘은 어디서 왔을까?<br>나를 부르는 저 목소리는 누구지?<br><br>어느 날 부턴가 의문의 목소리가 엘사를 부르고, 평화로운 아렌델 왕국을 위협한다.</div>
+                        <div>
+                            <div class="pre cell">
+                                <p class="tit cell">기대평</p>
+                                <p class="number">9.6</p>
+                            </div>
+                            <span class="sign"> 〉</span>
+                            <div class="pree cell-right">
+                                <p class="tit cell-right">관람평</p>
+                                <p class="number">9.1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="">
+                        <li class="cell">
+                            <a href="#" class="g">
+                                <h4>♡&nbsp;&nbsp;13.3k</h4>
+                            </a>
+                            <a href="#" class="t">
+                                <h4>♥&nbsp;&nbsp;13.3k</h4>
+                            </a>
+                        </li>
+                        <li class="cell">
+                            <a href="">
+                                <h4>예매</h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item" data-no="6">
+                    <div class="img-box" style="background-image:url(https://img.megabox.co.kr/SharedImg/asis/system/mop/poster/2019/07/F2B772-860E-4A3B-873C-F9E1C8C47966.large.jpg);"></div>
+                    <div class="sun">
+                        <div>“폐 끼치고 싶진 않았어요”<br><br>전원백수로 살 길 막막하지만 사이는 좋은 기택(송강호) 가족.<br>장남 기우(최우식)에게 명문대생 친구가 연결시켜 준 고액 과외 자리는</div>
+                        <div>
+                            <div class="pre cell">
+                                <p class="tit cell">기대평</p>
+                                <p class="number">8.8</p>
+                            </div>
+                            <span class="sign"> 〉</span>
+                            <div class="pree cell-right">
+                                <p class="tit cell-right">관람평</p>
+                                <p class="number">9.3</p>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="">
+                        <li class="cell">
+                            <a href="#" class="g">
+                                <h4>♡&nbsp;&nbsp;1.1k</h4>
+                            </a>
+                            <a href="#" class="t">
+                                <h4>♥&nbsp;&nbsp;1.1k</h4>
+                            </a>
+                        </li>
+                        <li class="cell">
+                            <a href="">
+                                <h4>예매</h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item" data-no="7">
+                    <div class="img-box" style="background-image:url(https://img.megabox.co.kr/SharedImg/asis/system/mop/poster/2019/00/4BAEBB-BAB6-48AD-BAA5-17776D485EFE.large.jpg);"></div>
+                    <div class="sun">
+                        <div>대한민국 관측 역사상 최대 규모의 백두산 폭발 발생.<br>갑작스러운 재난에 한반도는 순식간에 아비규환이 되고,<br>남과 북 모두를 집어삼킬 추가 폭발이 예측된다.</div>
+                        <div>
+                            <div class="pre cell">
+                                <p class="tit cell">기대평</p>
+                                <p class="number">7.4</p>
+                            </div>
+                            <span class="sign"> 〉</span>
+                            <div class="pree cell-right">
+                                <p class="tit cell-right">관람평</p>
+                                <p class="number">7.8</p>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="">
+                        <li class="cell">
+                            <a href="#" class="g">
+                                <h4>♡&nbsp;&nbsp;8.1k</h4>
+                            </a>
+                            <a href="#" class="t">
+                                <h4>♥&nbsp;&nbsp;8.1k</h4>
+                            </a>
+                        </li>
+                        <li class="cell">
+                            <a href="">
+                                <h4>예매</h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item" data-no="8">
+                    <div class="img-box" style="background-image:url(https://img.megabox.co.kr/SharedImg/asis/system/mop/poster/2013/69/A43ABE-6706-47BF-B0B4-E7AE9BF508AD.large.jpg);"></div>
+                    <div class="sun">
+                        <div>[모든 것은 돈 가방과 함께 시작되었다.]<br><br>사라진 애인 때문에 사채 빚에 시달리며 한 탕을 꿈꾸는 태영.<br>아르바이트로 가족의 생계를 이어가는 가장 중만.</div>
+                        <div>
+                            <div class="pre cell">
+                                <p class="tit cell">기대평</p>
+                                <p class="number">8.5</p>
+                            </div>
+                            <span class="sign"> 〉</span>
+                            <div class="pree cell-right">
+                                <p class="tit cell-right">관람평</p>
+                                <p class="number">7.7</p>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="">
+                        <li class="cell">
+                            <a href="#" class="g">
+                                <h4>♡&nbsp;&nbsp;4</h4>
+                            </a>
+                            <a href="#" class="t">
+                                <h4>♥&nbsp;&nbsp;4</h4>
+                            </a>
+                        </li>
+                        <li class="cell">
+                            <a href="">
+                                <h4>예매</h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item" data-no="9">
+                    <div class="img-box" style="background-image:url(https://img.megabox.co.kr/SharedImg/asis/system/mop/poster/2020/27/ACA55A-93F5-4EC0-A1C6-80CA73A8D14C.large.jpg);"></div>
+                    <div class="sun">
+                        <div>지독한 경제난 속에서 개척교회를 운영 중인 목사 ‘태욱’(박혁권)은 설상가상으로 아내 ‘정인’(류현경)으로부터 장모(남기애)의 수술비가 급히 필요하다는 이야기를 전해 듣는다. 극한의 상황 속에서 태욱과 정인은 각기 다</div>
+                        <div>
+                            <div class="pre cell">
+                                <p class="tit cell">기대평</p>
+                                <p class="number">9.9</p>
+                            </div>
+                            <span class="sign"> 〉</span>
+                            <div class="pree cell-right">
+                                <p class="tit cell-right">관람평</p>
+                                <p class="number">9.9</p>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="">
+                        <li class="cell">
+                            <a href="#" class="g">
+                                <h4>♡&nbsp;&nbsp;48</h4>
+                            </a>
+                            <a href="#" class="t">
+                                <h4>♥&nbsp;&nbsp;48</h4>
+                            </a>
+                        </li>
+                        <li class="cell">
+                            <a href="">
+                                <h4>예매</h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item" data-no="10">
+                    <div class="img-box" style="background-image:url(https://img.megabox.co.kr/SharedImg/asis/system/mop/poster/2019/8F/87A6BC-9CB3-48A2-8A10-F28540FE017F.large.jpg);"></div>
+                    <div class="sun">
+                        <div>킹 오브 프리즘 -샤이니 세븐 스타즈-<br>KING OF PRISM -Shiny Seven Stars- <br>Ⅱ 카케루x조지x미나토<br><br>모두가 뜨거웠던 그때의 두근거림</div>
+                        <div>
+                            <div class="pre cell">
+                                <p class="tit cell">기대평</p>
+                                <p class="number">0</p>
+                            </div>
+                            <span class="sign"> 〉</span>
+                            <div class="pree cell-right">
+                                <p class="tit cell-right">관람평</p>
+                                <p class="number">9.9</p>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="">
+                        <li class="cell">
+                            <a href="#" class="g">
+                                <h4>♡&nbsp;&nbsp;299</h4>
+                            </a>
+                            <a href="#" class="t">
+                                <h4>♥&nbsp;&nbsp;299</h4>
+                            </a>
+                        </li>
+                        <li class="cell">
+                            <a href="">
+                                <h4>예매</h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item" data-no="11">
+                    <div class="img-box" style="background-image:url(https://img.megabox.co.kr/SharedImg/asis/system/mop/poster/2019/DD/C041BE-5414-4C37-8CB9-84D7EB06B7D1.large.jpg);"></div>
+                    <div class="sun">
+                        <div>- [싱어롱] &lt;겨울왕국 1+2&gt;는 영화를 관람하며 노래를 따라부르는 관객 참여형 특별상영입니다.<br>- 일반영화와 같이 조용한 관람을 원하시는 분들은 &lt;겨울왕국 2&gt; 일반 상영 예매를 권합니다. <br>- 자막상영 영화이며 더빙영화를 원하시는분들은 &lt;겨울왕국2&gt; 일반 상영 예매를 권합니다.</div>
+                        <div>
+                            <div class="pre cell">
+                                <p class="tit cell">기대평</p>
+                                <p class="number">0</p>
+                            </div>
+                            <span class="sign"> 〉</span>
+                            <div class="pree cell-right">
+                                <p class="tit cell-right">관람평</p>
+                                <p class="number">9.8</p>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="">
+                        <li class="cell">
+                            <a href="#" class="g">
+                                <h4>♡&nbsp;&nbsp;767</h4>
+                            </a>
+                            <a href="#" class="t">
+                                <h4>♥&nbsp;&nbsp;767</h4>
+                            </a>
+                        </li>
+                        <li class="cell">
+                            <a href="">
+                                <h4>예매</h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item" data-no="12">
+                    <div class="img-box" style="background-image:url(https://img.megabox.co.kr/SharedImg/asis/system/mop/poster/2013/69/A43ABE-6706-47BF-B0B4-E7AE9BF508AD.large.jpg);"></div>
+                    <div class="sun">
+                        <div>1986년 앙굴렘 국제만화제에서 그랑프리를 받은 프랑스 SF만화 '설국 열차'를 영화로 봉준호 감독이 제작할 프로젝트. 원작은 냉전시대 갑작스런 기온 강하로 혹독한 추위가 닥친 지구를 배경으로 난방과 식량자급이 가능한 설국 열차만이 유일한 생존처가 되는 설정을 갖고 있다.</div>
+                        <div>
+                            <div class="pre cell">
+                                <p class="tit cell">기대평</p>
+                                <p class="number">9.9</p>
+                            </div>
+                            <span class="sign"> 〉</span>
+                            <div class="pree cell-right">
+                                <p class="tit cell-right">관람평</p>
+                                <p class="number">9.8</p>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="">
+                        <li class="cell">
+                            <a href="#" class="g">
+                                <h4>♡&nbsp;&nbsp;7</h4>
+                            </a>
+                            <a href="#" class="t">
+                                <h4>♥&nbsp;&nbsp;7</h4>
+                            </a>
+                        </li>
+                        <li class="cell">
+                            <a href="">
+                                <h4>예매</h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="middle-bar text-align-center">
+        <nav class="menu-box-1">
+            <ul class="row">
+                <li class="relative">
+                    <ul class="row">
+                        <li class="cell"><a href="#" class="block"><input type="text" placeholder="영화명을 입력해 주세요" title="영화 검색" class="input-text" id="movieName"></a></li>
+                        <!--
+                 -->
+                        <li class="cell tt"><a href="#" class="block"><i class="far fa-calendar-alt"></i>&nbsp;&nbsp;상영시간표</a></li>
+                        <!--
+                 -->
+                        <li class="cell"><a href="#" class="block"><i class="fas fa-film"></i>&nbsp;&nbsp;박스오피스</a></li>
+                        <!--
+                 -->
+                        <li class="cell"><a href="#" class="block"><i class="fas fa-receipt"></i>&nbsp;&nbsp;빠른예매</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+
+
+
+
+    <div class="gfd ">
+        <div class="ght con text-align-center">
+            <h3><img src="http://img.cgv.co.kr/R2014/images/title/h3_event.gif" alt="EVENT"></h3>
+        </div>
+    </div>
+
+    <div class="main-grid">
+        <div class="con">
+            <div class="grid-box row">
+                <div class="grid-item1 cell">
+                    <div class="grid-item-base">
+                        <div class="slider-1">
+                            <div class="slides">
+                                <div class="active" style="background-image:url(http://img.cgv.co.kr/Front/Main/2020/0218/15819873526160.jpg)">
+                                </div>
+                                <span class="img-title-1"></span>
+                                <span class="img-text-1"></span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="grid-item-hover">
+                        <div class="grid-item-hover-table">
+                            <a href="">
+                                <span class="hover-title-1">기생충 포스터</span>
+                                <br>
+                                <span class="hover-text-1">ONIY CGV</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item2 cell">
+                    <div class="grid-item-base" style="background-image:url(http://img.cgv.co.kr/Front/Main/2019/1224/15771764068110.jpg)">
+                    </div>
+                    <div class="grid-item-hover">
+                        <div class="grid-item-hover-table">
+                            <a href="">
+                                <span class="hover-title-2">SPHERE X</span>
+                                <br>
+                                <span class="hover-text-2">신규오픈</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item3 cell">
+                    <div class="grid-item-base" style="background-image:url(http://img.cgv.co.kr/Front/Main/2020/0217/15819309757910.jpg)">
+                    </div>
+                    <div class="grid-item-hover">
+                        <div class="grid-item-hover-table">
+                            <a href="">
+                                <span class="hover-title-3">1917 4DX 이벤트</span>
+                                <br>
+                                <span class="hover-text-2">신규오픈</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item4 cell">
+                    <div class="grid-item-base" style="background-image:url(http://img.cgv.co.kr/Front/Main/2020/0217/15819309758060.jpg)">
+                    </div>
+                    <div class="grid-item-hover">
+                        <div class="grid-item-hover-table">
+                            <a href="">
+                                <span class="hover-title-4"><img src="http://www.disney.co.kr/home/images/main/logo.png" alt="월트디즈니"></span>
+                                <br>
+                                <span class="hover-text-4">프린세스 기획전</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item5 cell">
+                    <div class="grid-item-base" style="background-image:url(http://img.cgv.co.kr/Front/Main/2019/1104/15728438029070.jpg)">
+                    </div>
+                    <div class="grid-item-hover">
+                        <div class="grid-item-hover-table">
+                            <a href="">
+                                <span class="hover-title-5">현대오일뱅크</span>
+                                <br>
+                                <span class="hover-text-5">보너스뱅크</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item6 cell">
+                    <div class="grid-item-base" style="background-image:url(http://img.cgv.co.kr/R2014/images/main/main_moviecollage.jpg)">
+                    </div>
+                    <div class="grid-item-hover">
+                        <div class="grid-item-hover-table">
+                            <a href="">
+                                <span class="hover-title-6">CGV ARTHOUSE, A Good Movie, A Better Life</span>
+                                <br>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item7 cell">
+                    <div class="grid-item-base" style="background-image:url(http://adimg.cgv.co.kr/images/201709/house/0929_226X259.jpg)">
+                    </div>
+                    <div class="grid-item-hover">
+                        <div class="grid-item-hover-table">
+                            <a href="">
+                                <span class="hover-title-7">광고-CGV</span>
+                                <br>
+                                <span class="hover-text-7">기프트 카드</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!--큐레이션 -->
+
+
+
+    <div class="bbbb">
+        <div class="ttee con line-height-0-ch-only">
+            <div class="cell">큐레이션</div>
+            <div class="cell-right">큐레이션 더보기&nbsp;<i class="fas fa-plus"></i></div>
+        </div>
+
+        <div class="ttss con">
+            <div class="item">
+                <div class="img-box part-1">
+                    <img src="https://img.megabox.co.kr/SharedImg/2020/02/10/pYFBsgbriaDyNbaCMcVH5GCkXCpdx4BZ_316.jpg">
+                </div>
+                <div class="img-box part-2">
+                    <img src="https://www.megabox.co.kr/static/pc/images/main/bg-bage-curation-classic.png" alt="">
+                </div>
+                <ul class="vd">
+                    <li class="cell">
+                        <a href="#" class="g">
+                            <h4>상세정보</h4>
+                        </a>
+                    </li>
+                    <li class="cell">
+                        <a href="#" class="t">
+                            <h4>예매</h4>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="yg">
+                <div class="hg"><a>#클래식소사이어틱</a></div>
+                <div class="kg"><a>[시네도슨트] 루브르 박물관</a></div>
+            </div>
+            <div class="gh">
+                <div class="hg">
+                    <p class="summary">
+                        [2020 시네 도슨트]<br><br>극장에서 떠나는 세계 미술관 나들이!<br>서유럽을 넘어 러시아와 북미까지. 세계의 미술관들이 품고 있는 문화와 예술사를 안현배 미술사학자의 풍부한 해설과 함께 만나 보세요.<br>클래식 소사이어티가 더욱 다채로운 미술관 여행으로 초대합니다.</p>
+                </div>
+            </div>
+            <div class="item-1">
+                <div class="part-3">
+                    <img src="https://img.megabox.co.kr/SharedImg/asis/system/mop/poster/2020/88/3AE4B6-4E71-4828-B553-2A48ECC8B3EE.medium.jpg">
+                </div>
+                <div class="part-4">
+                    <img src="https://www.megabox.co.kr/static/pc/images/main/bg-bage-curation-classic-m.png" alt="">
+                </div>
+                <div class="part-5">
+                    <img src="https://img.megabox.co.kr/SharedImg/2020/02/18/4iTesYoC8NXnMzWQWZjs0jt9a2xvhMBo_230.jpg">
+                </div>
+                <div class="part-6">
+                    <img src="https://www.megabox.co.kr/static/pc/images/main/bg-bage-curation-film-m.png" alt="">
+                </div>
+                <div class="part-7">
+                    <img src="https://img.megabox.co.kr/SharedImg/asis/system/mop/poster/2020/33/155B39-BB58-4DB4-A25E-E37255D3224E.medium.jpg">
+                </div>
+                <div class="part-8">
+                    <img src="https://www.megabox.co.kr/static/pc/images/main/bg-bage-curation-film-m.png" alt="">
+                </div>
+                <div class="part-9">
+                    <img src="https://img.megabox.co.kr/SharedImg/2020/02/10/vZBqbvO5prnUcTnNa45VtY0nStlT2zBw_230.jpg">
+                </div>
+                <div class="part-10">
+                    <img src="https://www.megabox.co.kr/static/pc/images/main/bg-bage-curation-film-m.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- CGV 안내-->
+
+
+
+    <div class="box-1-title con">
+        <h1>CGV 안내</h1>
+    </div>
+
+
+    <div class="con ddf">
+        <div class="box-1 row cell">
+            <div class="block">
+                <div class="img-box"></div>
+            </div>
+        </div>
+        <div class="box-1 row cell">
+            <div class="block">
+                <div class="img-box img-box-1"></div>
+            </div>
+        </div>
+        <div class="box-1 row cell">
+            <div class="block">
+                <div class="img-box img-box-2"></div>
+            </div>
+        </div>
+        <div class="box-1 row cell">
+            <div class="block">
+                <div class="img-box img-box-3"></div>
+            </div>
+        </div>
+        <div class="box-1 row cell">
+            <div class="block">
+                <div class="img-box img-box-4"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--하단 정렬--->
+
+
+
+
+    <div class="boo">
+        <div class="con dff">
+            <div class="cell">
+                <a href="#">지점&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ｜</a>
+                <a href="#" class="ghj">&nbsp;&nbsp;[송파파크하비오]</a>
+                <a href="#">12/20~21 운영시간 조정 안내</a>
+            </div>
+            <div class="cell-right df">
+                <a href="#">2020.02.19&nbsp;&nbsp;&nbsp;&nbsp;｜&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a href="#">더보기&nbsp;&nbsp;<i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--아이콘 교체 리스트-->
+
+
+
+    <div class="box-2 con">
+        <nav class="menu-box-2">
+            <ul class="row">
+                <li class="cell">
+                    <a href="#" class="block">
+                        <img src="https://img.megabox.co.kr/static/pc/images/common/ico/ico-main-customer.png" alt="">
+                        <span>고객센터</span>
+                    </a>
+                </li>
+                <li class="cell">
+                    <a href="#" class="block">
+                        <img src="https://img.megabox.co.kr/static/pc/images/common/ico/ico-main-faq.png" alt="">
+                        <span>자주묻는질문</span>
+                    </a>
+                </li>
+                <li class="cell">
+                    <a href="#" class="block">
+                        <img src="https://img.megabox.co.kr/static/pc/images/common/ico/ico-main-qna.png" alt="">
+                        <span>1:1문의</span>
+                    </a>
+                </li>
+                <li class="cell">
+                    <a href="#" class="block">
+                        <img src="https://img.megabox.co.kr/static/pc/images/common/ico/ico-main-group.png" alt="">
+                        <span>단체/대관문의</span>
+                    </a>
+                </li>
+                <li class="cell">
+                    <a href="#" class="block">
+                        <img src="https://img.megabox.co.kr/static/pc/images/common/ico/ico-main-lost.png" alt="">
+                        <span>분실물 문의/접수</span>
+                    </a>
+                </li>
+                <li class="cell">
+                    <a href="#" class="block">
+                        <img src="https://img.megabox.co.kr/static/pc/images/common/ico/ico-main-boutique.png" alt="">
+                        <span>더 부티크 프라이빗<br>대관안내</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+    <div class="ee">
+        <div class="gee">
+            <div class="dd  text-align-center">
+                <img src="http://adimg.cgv.co.kr/images/201709/house/0929_980X240.png" alt="광고-CGV 기프트 카드" border="0">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 하단 -->
+
+
+
+
+
+    <div class="fdf">
+        <div class="policy con">
+            <ul class="row">
+                <li class="cell"><a href="#" class="block">회사소개&nbsp;&nbsp;｜</a></li>
+                <li class="cell"><a href="#" class="block">&nbsp;&nbsp;IR&nbsp;&nbsp;｜</a></li>
+                <li class="cell"><a href="#" class="block">&nbsp;&nbsp;채용정보&nbsp;&nbsp;｜</a></li>
+                <li class="cell"><a href="#" class="block">&nbsp;&nbsp;광고/프로모션문의&nbsp;&nbsp;｜</a></li>
+                <li class="cell"><a href="#" class="block">&nbsp;&nbsp;제휴문의&nbsp;&nbsp;｜</a></li>
+                <li class="cell"><a href="#" class="block">&nbsp;&nbsp;출점문의&nbsp;&nbsp;｜</a></li>
+                <li class="cell"><a href="#" class="block">&nbsp;&nbsp;이용약관&nbsp;&nbsp;｜</a></li>
+                <li class="cell"><a href="#" class="block">&nbsp;&nbsp;편성기준&nbsp;&nbsp;</a></li>
+                <li class="cell"><a href="#" class="block empha-red">｜&nbsp;&nbsp;개인정보처리방침&nbsp;&nbsp;｜</a></li>
+                <li class="cell"><a href="#" class="block">&nbsp;&nbsp;법적고지&nbsp;&nbsp;｜</a></li>
+                <li class="cell"><a href="#" class="block">&nbsp;&nbsp;이메일주소무단수집거부&nbsp;&nbsp;</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+    <div class="address con">
+        <div class="hadan-logo cell">
+            <img src="https://waifu2x.booru.pics/outfiles/a98fa46dc33151625b2e06ea216828247cb24507_s1_n2.png" alt="">
+        </div>
+        <p class="cell">(04377)서울특별시 용산구 한강대로 23길 55, 아이파크몰 6층(한강로동) <br>대표이사 : 최병환 ｜사업자등록번호 : 104-81-45690 ｜ 통신판매업신고번호 : 2017-서울용산-0662 <br>호스팅사업자 : CJ올리브네트웍스｜개인정보보호 책임자 : 정종민｜>대표이메일 : cjcgvmaster@cj.net｜CGV고객센터 : 1544-1122 <br>© CJ CGV. All Rights Reserved</p>
+        <div class="cc cell-right">
+            <a href="#">극장찾기</a>
+        </div>
+        <div class="cd cell-right">
+            <a href="#"><img src="https://img.megabox.co.kr/static/pc/images/common/ico/ico-twitter.png" alt=""></a>
+            <a href="#"><img src="https://img.megabox.co.kr/static/pc/images/common/ico/ico-facebook.png" alt=""></a>
+            <a href="#"><img src="https://img.megabox.co.kr/static/pc/images/common/ico/ico-instagram.png" alt=""></a>
+            <a href="#"><img src="https://img.megabox.co.kr/static/pc/images/common/ico/ico-googleplay.png" alt=""></a>
+            <a href="#"><img src="https://img.megabox.co.kr/static/pc/images/common/ico/ico-appstore.png" alt=""></a>
+        </div>
+    </div>
+
+    <div class="qqq"></div>
+    <script src="index.js"></script>
+</body>
+
+</html>
