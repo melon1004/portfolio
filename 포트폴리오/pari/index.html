@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>파리바게뜨 리디자인</title>
+
+
+
+
+    <!-- 모바일에서 화면배율을 디바이스 크기 기준으로 설정 -->
+    <!-- 이게 안되면 pc에서의 100px과 모바일에서의 100px이 디바이스 성능에 따라 달라집니다. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- 아울 캐러셀 불러오기, 제이쿼리 보다 밑에 있어야 합니다. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+
+
+    <!-- 메뉴바 -->
+
+    <div class="first">
+        <div class="top-bar-2 con-min-width">
+            <div class="con row">
+                <a href="#" class="logo  inline-block img-box "></a>
+
+                <nav class="menu-box-1 cell">
+                    <ul class="row">
+                        <li class="cell cell-1">
+                            <a href="#" class="block"><span class="block">PB MAGAZINE</span></a>
+                        </li>
+                        <li class="cell cell-2">
+                            <a href="#" class="block"><span class="block">PB STORY</span></a>
+                        </li>
+                        <li class="cell cell-3">
+                            <a href="#" class="block"><span class="block">PRODUCTS</span></a>
+                            <div class="sub-menu">
+                                <ul class="con row">
+                                    <li class="cell">
+                                        <ul>
+                                            <li class="height-100p">
+                                                <a href="#" class="block">
+                                                    전체
+                                                    <ul class="row">
+                                                        <li class="cell"><a href="#" class="block">브레드</a></li>
+                                                        <li class="cell"><a href="#" class="block">케이크</a></li>
+                                                        <li class="cell"><a href="#" class="block">샌드위치/샐러드</a></li>
+                                                    </ul>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="cell">
+                                        <ul>
+                                            <li class="height-100p">
+                                                <a href="#" class="block">
+                                                    선물
+                                                    <ul class="row ddd">
+                                                        <li class="cell"><a href="#" class="block">디저트</a></li>
+                                                        <li class="cell"><a href="#" class="block">스낵</a></li>
+                                                        <li class="cell"><a href="#" class="block">음료/아이스</a></li>
+                                                        <li class="cell ffd"><a href="#" class="block"><img src="https://www.paris.co.kr/wp-content/uploads/200.jpg"></a></li>
+                                                    </ul>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+
+                <nav class="menu-box-1 cell-right">
+                    <ul class="row">
+                        <li class="cell tt">
+                            <a href="#" class="block"><span>STORE</span></a>
+                        </li>
+                        <li class="cell">
+                            <a href="#" class="block"><span>DELIVERY</span></a>
+                        </li>
+                        <li class="cell">
+                            <a href="#" class="block"><span>PROMOTION</span></a>
+                        </li>
+                        <li class="cell">
+                            <a href="#" class="block"><i class="fas fa-search"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- 슬라이더 시작 -->
+
+
+
+    <div class="slider-1">
+        <div class="slides">
+            <div class="active" style="background-image:url(https://user-images.githubusercontent.com/56675593/76221651-c3389500-625c-11ea-8d50-1465c859836a.png);"></div>
+            <div style="background-image:url(https://user-images.githubusercontent.com/56675593/76219602-6c7d8c00-6259-11ea-94b0-9dfbe376635c.png);"></div>
+            <div style="background-image:url(https://user-images.githubusercontent.com/56675593/76219614-72736d00-6259-11ea-89c6-e3a0d5f0a3dd.png);"></div>
+            <div style="background-image:url(https://user-images.githubusercontent.com/56675593/76221645-bf0c7780-625c-11ea-9293-d81a24854897.png);"></div>
+            <div style="background-image:url(https://user-images.githubusercontent.com/56675593/76219646-7d2e0200-6259-11ea-80e9-c4fef58e850e.png);"></div>
+            <div style="background-image:url(https://user-images.githubusercontent.com/56675593/76224043-eebc7f00-625e-11ea-8a68-e7dfad74b048.png);"></div>
+        </div>
+        <div class="page-btns">
+            <div class="active"></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="side-btns">
+            <div>
+                <span><i class="fas fa-angle-left"></i></span>
+            </div>
+            <div>
+                <span><i class="fas fa-angle-right"></i></span>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 3차 -->
+
+
+    <div class="nnn">
+        <div class="mep con-min-width">
+            <img src="https://user-images.githubusercontent.com/56675593/76210526-a9408780-6247-11ea-9930-3c76e4915fe3.jpg" alt="">
+        </div>
+
+
+        <div class="red con-min-width">
+            <img src="https://user-images.githubusercontent.com/56675593/76210178-ec4e2b00-6246-11ea-85e4-eea624454628.png" alt="">
+            <div class="ta active-on-visible" data-active-on-visible-diff-y="-100">
+                <div class="ff inline-block"><span>ALWAYS BESIDE YOU ,</span></div>
+                <div class="ff-1 inline-block"><span>PARRIS BAGUTTE</span></div>
+                <div class="mm"><span>늘 당신 곁에, 파리바게뜨의 다양한 메뉴를 맛보세요.</span></div>
+                <div class="cor">
+                    <a href="#" class="en">메뉴보기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- 4차 -->
+
+
+
+    <div class="hop">
+        <div class="bb">
+            <img src="https://user-images.githubusercontent.com/56675593/76211887-91b6ce00-624a-11ea-8c8e-f3730ec6c68d.PNG" alt="">
+        </div>
+        <div class="layer_floating">
+            <a href="/whats_new/newsView.do?seq=3728"></a>
+        </div>
+
+        <section id="reserve2Wrap">
+            <div id="reserve2_medal" style="transform: perspective(668px); position: relative;">
+                <div class="reserve2_medal01 front"></div>
+                <div class="reserve2_medal02 back active">
+                    <p>파리바게뜨 리저브 매장 - 스타벅스 리저브 커피 및 관련 제품을 판매하는 매장을 확인하려면 매장보기를 눌러주세요.</p>
+                    <a href="http://www.istarbucks.co.kr/store/store_reserve.do">매장보기</a>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <section id="storeWrap">
+            <div class="wrap_inner">
+                <div class="store_exp_img01" style="opacity: 1;"></div>
+                <div class="store_exp_img02" style="opacity: 1;"></div>
+                <div class="store_exp_img03" style="opacity: 1;"></div>
+                <div class="store_exp_img04"></div>
+                <div class="box-10 con row active-on-visible" data-active-on-visible-diff-y="-100">
+                    <div class="cell width-50p">
+                        <div class="store_txt01 txt" style="opacity: 1; right: 149px;">파리바게뜨를 가까이에서 경험해보세요. <a href="#">고객님과 가장
+                                가까이 있는 매장을 찾아보세요!</a> </div>
+                        <div class="store_txt02 txt" style="opacity: 1; right: 168px;"></div>
+                        <div class="store_btn txt" style="opacity: 1; right: 402px;"><a href="/store/store_map.do">매장 찾기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+
+    <!-- 5차 -->
+
+
+
+
+    <div class="bro">
+
+        <div class="parry text-align-center active-on-visible" data-active-on-visible-diff-y="-100">
+            <div class="bb inline-block"><span>PARIS</span></div>
+            <div class="bb-1 inline-block"><span>BAGUTTE</span></div>
+            <div class="gr"><span>최고의 빵을 향한 끓임없는 노력, 파리바게뜨 연구소</span></div>
+            <div class="rh"><span></span></div>
+        </div>
+
+
+
+
+
+        <div class="title-box-1 active-on-visible con ">
+            <h1 class="text-align-center">
+                <strong class="font-pbgothic cell">PB MAGAZINE</strong>
+                <a href="/pbmagazine" class="btn-more cell-right"><span>SHOW MORE</span></a>
+            </h1>
+        </div>
+
+        <div class="banner-box-1 con con-min-width">
+            <div class="row cvb">
+                <div class="cell active-on-visible" data-active-on-visible-diff-y="-200">
+                    <div class="img-box img-box-1" style="background-image:url(https://www.paris.co.kr/wp-content/uploads/thumbnail-4.jpg);">
+                        <div class="txt-box">
+                            <h1>이달의 파바</h1>
+                            <div>파리바게뜨가 선정한 이달의 제품</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell active-on-visible" data-active-on-visible-diff-y="-400" style="position:relative ; z-index : 1">
+                    <div class="img-box img-box-2" style="background-image:url(https://www.paris.co.kr/wp-content/uploads/2019/10/signatureadagio-1-600x750.jpg);">
+                        <div class="txt-box">
+                            <h1>아다지오 시그니처 : Vol.2</h1>
+                            <div>가장 신선하고 맛있는 순간을 즐기는 방법</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell active-on-visible" data-active-on-visible-diff-y="-600">
+                    <div class="img-box img-box-3" style="background-image:url(https://www.paris.co.kr/wp-content/uploads/2019/10/signaturebread-1-600x750.jpg);">
+                        <div class="txt-box">
+                            <h1>시그니처 브레드 : Vol.1</h1>
+                            <div>매일 먹는 빵, 속 깊이 맛있어진 이유</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="greee"></div>
+
+
+    </div>
+
+
+
+
+    <!-- 6차 -->
+
+
+
+
+
+
+    <div class="section-01">
+        <div class="tab-box">
+            <div class="head cell">
+                <ul class="row inline-block">
+                    <li class="cell active"><a href="#" class="block">PRODUCTS</a></li>
+                </ul>
+            </div>
+            <div class="head cell-right">
+                <ul class="row inline-block">
+                    <li class="cell-right"><a href="#" class="block"><span>SHOW MORE</span></a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <ul>
+                    <li class="active">
+                        <div class="my-carousel-box-1">
+                            <div class="owl-carousel owl-theme">
+                                <div class="item" style="width: 248px; margin-right: 24px;"><img src="https://www.paris.co.kr/wp-content/uploads/2020/02/191128_에그고로케_01-600x600.jpg" class="product-tb">
+                                    <div class=" text-align-center">
+                                        <div class="prod-name">에그 오픈고로케</div>
+                                    </div>
+                                </div>
+                                <div class="item" style="width: 248px; margin-right: 24px;"><img src="https://www.paris.co.kr/wp-content/uploads/200220_생딸기-피스타치오-600x600.jpg" class="product-tb">
+                                    <div class=" text-align-center">
+                                        <div class="prod-name">생딸기 피스타치오케이크</div>
+                                    </div>
+                                </div>
+                                <div class="item" style="width: 248px; margin-right: 24px;"><img src="https://www.paris.co.kr/wp-content/uploads/200220_생딸기-트러플-초코-600x600.jpg" class="product-tb">
+                                    <div class=" text-align-center">
+                                        <div class="prod-name">생딸기 트리플 초코케이크</div>
+                                    </div>
+                                </div>
+                                <div class="item" style="width: 248px; margin-right: 24px;"><img src="https://www.paris.co.kr/wp-content/uploads/200224_생딸기-피스타치오-초미니-600x600.jpg" class="product-tb">
+                                    <div class=" text-align-center">
+                                        <div class="prod-name">생딸기 피스타치오</div>
+                                    </div>
+                                </div>
+                                <div class="item" style="width: 248px; margin-right: 24px;"><img src="https://www.paris.co.kr/wp-content/uploads/200224_생딸기-트러플초코-초미니-600x600.jpg" class="product-tb">
+                                    <div class=" text-align-center">
+                                        <div class="prod-name">생딸기트리플초코</div>
+                                    </div>
+                                </div>
+                                <div class="item" style="width: 248px; margin-right: 24px;"><img src="https://www.paris.co.kr/wp-content/uploads/칠리소시지페스츄리-웹-600x600.jpg" class="product-tb">
+                                    <div class=" text-align-center">
+                                        <div class="prod-name">칠리소시지페스츄리</div>
+                                    </div>
+                                </div>
+                                <div class="item" style="width: 248px; margin-right: 24px;"><img src="https://www.paris.co.kr/wp-content/uploads/진한우유식빵-웹-600x600.jpg" class="product-tb">
+                                    <div class=" text-align-center">
+                                        <div class="prod-name">진한우유식빵</div>
+                                    </div>
+                                </div>
+                                <div class="item" style="width: 248px; margin-right: 24px;"><img src="https://www.paris.co.kr/wp-content/uploads/2020/01/200107_303238574411_1-600x600.jpg" class="product-tb">
+                                    <div class=" text-align-center">
+                                        <div class="prod-name">와삭와삭바게뜨</div>
+                                    </div>
+                                </div>
+                                <div class="item" style="width: 248px; margin-right: 24px;"><img src="https://www.paris.co.kr/wp-content/uploads/2019/11/191105_1_910198-600x600.jpg" class="product-tb">
+                                    <div class=" text-align-center">
+                                        <div class="prod-name">촉촉한 치즈케익</div>
+                                    </div>
+                                </div>
+                                <div class="item" style="width: 248px; margin-right: 24px;"><img src="https://www.paris.co.kr/wp-content/uploads/200213_주종고구마빵-웹-1-600x600.jpg" class="product-tb">
+                                    <div class=" text-align-center">
+                                        <div class="prod-name">주종고구마빵</div>
+                                    </div>
+                                </div>
+                                <div class="item" style="width: 248px; margin-right: 24px;"><img src="https://www.paris.co.kr/wp-content/uploads/2020/01/200108_170524_1280-600x600.jpg" class="product-tb">
+                                    <div class=" text-align-center">
+                                        <div class="prod-name">행복해 블루베리케이크</div>
+                                    </div>
+                                </div>
+                                <div class="item" style="width: 248px; margin-right: 24px;"><img src="https://www.paris.co.kr/wp-content/uploads/2020/01/200130_웹용우리함께-달려요-해피레이싱-600x600.jpg" class="product-tb">
+                                    <div class=" text-align-center">
+                                        <div class="prod-name">우리 함께 달려요 해피레이싱</div>
+                                    </div>
+                                </div>
+                                <div class="item" style="width: 248px; margin-right: 24px;"><img src="https://www.paris.co.kr/wp-content/uploads/2020/01/caramel_mini-600x600.jpg" class="product-tb">
+                                    <div class=" text-align-center">
+                                        <div class="prod-name">솔티드카라멜</div>
+                                    </div>
+                                </div>
+                                <div class="item" style="width: 248px; margin-right: 24px;"><img src="https://www.paris.co.kr/wp-content/uploads/2019/11/200106_170513-600x600.jpg" class="product-tb">
+                                    <div class=" text-align-center">
+                                        <div class="prod-name">스트로벨벳치즈케이크</div>
+                                    </div>
+                                </div>
+                                <div class="item" style="width: 248px; margin-right: 24px;"><img src="https://www.paris.co.kr/wp-content/uploads/2019/11/1022_2-600x600.jpg" class="product-tb">
+                                    <div class=" text-align-center">
+                                        <div class="prod-name">토종 효모 맛있는 로만밀 슈퍼플러스</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- 7차 -->
+
+
+
+
+
+
+
+
+
+
+    <div class="dhh">
+
+        <div class="box-3-title con text-align-center">
+            <h1>@parisbaguette_kr</h1>
+            <p>Instagram</p>
+        </div>
+
+        <div class="box-2 con-min-width relative">
+            <nav class="menu-box-1">
+                <ul class="row">
+                    <li class="cell">
+                        <div class="img">
+                            <img src="https://user-images.githubusercontent.com/56675593/76294781-dac45c00-62f6-11ea-91c9-0acd95114f55.jpg" alt="">
+                            <div class="cover">
+                                <div>
+                                    <p>너만 보인단 말이야~<img draggable="false" role="img" class="emoji" alt="🍭" src="https://s.w.org/images/core/emoji/12.0.0-1/svg/1f36d.svg"><img draggable="false" role="img" class="emoji" alt="💕" src="https://s.w.org/images/core/emoji/12.0.0-1/svg/1f495.svg"> 화이트데이 선물 아직도 고민하니 혹쉬~?<img draggable="false" role="img" class="emoji" alt="👀" src="https://s.w.org/images/core/emoji/12.0.0-1/svg/1f440.svg"> . 파리바게뜨와 함께하는 HAPPY WDAY<img draggable="false" role="img" class="emoji" alt="💝" src="https://s.w.org/images/core/emoji/12.0.0-1/svg/1f49d.svg"></p>
+                                    <a href="/front/memnotice/membership" class="btn small2 zz-1 btnLine2">자세히 보기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cell">
+                        <div class="img">
+                            <img src="https://user-images.githubusercontent.com/56675593/76408391-3b739780-63d0-11ea-9837-9e0da1929a53.jpg" alt="">
+                            <div class="cover">
+                                <div>
+                                    <p> #PB2U <img draggable="false" role="img" class="emoji" alt="🎉" src="https://s.w.org/images/core/emoji/12.0.0-1/svg/1f389.svg"> 해삐벌쓰데이투유 <img draggable="false" role="img" class="emoji" alt="🥳" src="https://s.w.org/images/core/emoji/12.0.0-1/svg/1f973.svg"><img draggable="false" role="img" class="emoji" alt="🎂" src="https://s.w.org/images/core/emoji/12.0.0-1/svg/1f382.svg"> 3월에 태어난 친구 있어요? 있으면 소환! 3분을 추첨해 시그니처 생크림 케이크 드릴게요 <img draggable="false" role="img" class="emoji" alt="🛵" src="https://s.w.org/images/core/emoji/12.0.0-1/svg/1f6f5.svg"><img draggable="false" role="img" class="emoji" alt="💌" src="https://s.w.org/images/core/emoji/12.0.0-1/svg/1f48c.svg"></p>
+                                    <a href="/front/memnotice/membership" class="btn small2 zz-1 btnLine2">자세히 보기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cell">
+                        <div class="img">
+                            <img src="https://user-images.githubusercontent.com/56675593/76294776-da2bc580-62f6-11ea-9fb1-2b8151301348.jpg" alt="">
+                            <div class="cover">
+                                <div>
+                                    <p>오늘도 난...집에서 논다<img draggable="false" role="img" class="emoji" alt="😭" src="https://s.w.org/images/core/emoji/12.0.0-1/svg/1f62d.svg"> 마음만은 봄소풍<img draggable="false" role="img" class="emoji" alt="👒" src="https://s.w.org/images/core/emoji/12.0.0-1/svg/1f452.svg"> 완벽한 홈캉스<img draggable="false" role="img" class="emoji" alt="🏠" src="https://s.w.org/images/core/emoji/12.0.0-1/svg/1f3e0.svg">를 위한 파바 샌드위치 추천<img draggable="false" role="img" class="emoji" alt="🎶" src="https://s.w.org/images/core/emoji/12.0.0-1/svg/1f3b6.svg"> . 우유, 커피에 모두 잘 어울리는 디럭스 샌드위치<img draggable="false" role="img" class="emoji" alt="🥪" src="https://s.w.org/images/core/emoji/12.0.0-1/svg/1f96a.svg"></p>
+                                    <a href="/front/memnotice/membership" class="btn small2 zz-1 btnLine2">자세히 보기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cell">
+                        <div class="img">
+                            <img src="https://user-images.githubusercontent.com/56675593/76294774-d8fa9880-62f6-11ea-96b4-6794ebf903db.jpg" alt="">
+                            <div class="cover">
+                                <div>
+                                    <p>복잡한 세상 편하게 먹자<img draggable="false" role="img" class="emoji" alt="🙋🏻‍♀️" src="https://s.w.org/images/core/emoji/12.0.0-1/svg/1f64b-1f3fb-200d-2640-fe0f.svg"><img draggable="false" role="img" class="emoji" alt="🙋🏻‍♂️" src="https://s.w.org/images/core/emoji/12.0.0-1/svg/1f64b-1f3fb-200d-2642-fe0f.svg" alt=""> 믿고먹는 파바 샌드위치 BEST 5! . @난 미니버거_넌 뭐가 좋아?<img draggable="false" role="img" class="emoji" alt="😋" src="https://s.w.org/images/core/emoji/12.0.0-1/svg/1f60b.svg" alt=""></p>
+                                    <a href="/front/memnotice/membership" class="btn small2 zz-1 btnLine2">자세히 보기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cell">
+                        <div class="img">
+                            <img src="https://user-images.githubusercontent.com/56675593/76294780-dac45c00-62f6-11ea-8ee3-e2959545fd82.jpg" alt="">
+                            <div class="cover">
+                                <div>
+                                    <p>맛없없 조합인 생크림<img draggable="false" role="img" class="emoji" alt="🍦" src="https://s.w.org/images/core/emoji/12.0.0-1/svg/1f366.svg"> + 딸기의<img draggable="false" role="img" class="emoji" alt="🍓" src="https://s.w.org/images/core/emoji/12.0.0-1/svg/1f353.svg"> 영롱한 비주얼<img draggable="false" role="img" class="emoji" alt="✨" src="https://s.w.org/images/core/emoji/12.0.0-1/svg/2728.svg"> 파바 시그니처 생크림 케이크의 단면을 소개합니다<img draggable="false" role="img" class="emoji" alt="👏🏻" src="https://s.w.org/images/core/emoji/12.0.0-1/svg/1f44f-1f3fb.svg"></p>
+                                    <a href="/front/memnotice/membership" class="btn small2 zz-1 btnLine2">자세히 보기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cell">
+                        <div class="img">
+                            <img src="https://user-images.githubusercontent.com/56675593/76408396-3ca4c480-63d0-11ea-9d9e-c312f59cbca3.jpg" alt="">
+                            <div class="cover">
+                                <div>
+                                    <p>반짝 반짝 WDAY #인싸템 LED 사탕반지<img draggable="false" role="img" class="emoji" alt="🍬" src="https://s.w.org/images/core/emoji/12.0.0-1/svg/1f36c.svg"><img draggable="false" role="img" class="emoji" alt="💍" src="https://s.w.org/images/core/emoji/12.0.0-1/svg/1f48d.svg"> 솔직히 어른인데 사고싶은 사람 손 <img draggable="false" role="img" class="emoji" alt="🙋🏻‍♀️" src="https://s.w.org/images/core/emoji/12.0.0-1/svg/1f64b-1f3fb-200d-2640-fe0f.svg"> 센스있는 선물하고 칭찬받자! . @ 친구야 나 이거 사조 <img draggable="false" role="img" class="emoji" alt="🥰" src="https://s.w.org/images/core/emoji/12.0.0-1/svg/1f970.svg"></p>
+                                    <a href="/front/memnotice/membership" class="btn small2 zz-1 btnLine2">자세히 보기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- 7 - 1차 -->
+
+
+
+
+
+
+
+
+
+
+    <div class="gip con-min-width">
+        <div class="bnm">
+            <div class="ty">
+                <ul class="hkk">
+                    <li><a href="#">고객센터</a></li><span>〉</span>
+                </ul>
+                <ul class="hkk-1">
+                    <li><a href="#">고객의 소리를 적극 경청하고 고객만족 향상 활동을 지속적으로 실천합니다.</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bnm">
+            <div class="ty">
+                <ul class="hkk">
+                    <li><a href="#">제휴카드안내</a></li><span>〉</span>
+                </ul>
+                <ul class="hkk-1">
+                    <li><a href="#">해피포인트와 제휴카드 정보를 확인하세요.&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bnm">
+            <div class="ty hkk-2">
+                <ul class="hkk">
+                    <li><a href="#">공지사항</a></li><span>〉</span>
+                </ul>
+                <ul class="hkk-1">
+                    <li><a href="#">파리바게뜨 공지 내용을 확인하세요.&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!--- 8차 --->
+
+
+
+
+    <div class="top-bar-3">
+        <nav class="menu-box-3 con text-align-center line-height-0-ch-only">
+            <ul class="row inline-block">
+                <li class="cell">
+                    <a href="#" class="block">Info</a>
+                    <div>
+                        <div class="menu-2  line-height-0-ch-only">
+                            <div class="inline-block">
+                                <ul class="row">
+                                    <li class="tts"><a href="#">브랜드소개</a></li>
+                                    <li class="tts"><a href="#" class="block">창업안내</a></li>
+                                    <li class="tts"><a href="#" class="block">거래희망사전등록</a></li>
+                                    <li class="tts"><a href="#" class="block">윤리신고센터</a></li>
+                                    <li class="tts"><a href="#" class="block">채용</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <a href="#" class="block">Contact Us</a>
+                    <div>
+                        <div class="menu-2  line-height-0-ch-only">
+                            <div class="inline-block">
+                                <ul class="row">
+                                    <li class="tts"><a href="#">고객센터</a></li>
+
+                                    <li class="tts"><a href="#" class="block">080-731-2027</a></li>
+                                    <li class="tts"><a href="#" class="block">평일 9:00 - 15:00(점심 12:00 - 13:00)</a></li>
+                                    <li class="tts"><a href="#" class="block">고객칭찬</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <a href="#" class="block">
+                        <img src="https://www.paris.co.kr/wp-content/themes/paris/assets/img/footer/footer-logo-img-01.png" alt="SPC그룹 사회공헌활동 SPC 행복한 이야기" class="logo1">
+
+                    </a>
+                    <div>
+                        <div>
+                            <div class="inline-block">
+                                <ul class="row">
+                                    <li class="cell ttb">
+                                        <a href="#">
+                                            <img src="https://www.paris.co.kr/wp-content/themes/paris/assets/img/footer/footer-logo-img-02.png" alt="NCSI" class="logo2">
+                                            <img src="https://www.paris.co.kr/wp-content/themes/paris/assets/img/footer/footer-logo-img-03.png" alt="KCSI" class="logo3">
+                                            <img src="https://www.paris.co.kr/wp-content/themes/paris/assets/img/footer/footer-logo-img-04.png" alt="KS-SA" class="logo4">
+                                            <img src="https://www.paris.co.kr/wp-content/themes/paris/assets/img/footer/footer-logo-img-05.png" alt="NBCI" class="logo5">
+                                        </a>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="cell">
+                    <a href="#" class="block">Follow Us</a>
+                    <div>
+                        <div>
+                            <div class="inline-block">
+                                <ul class="row">
+                                    <li class="cell sns">
+                                        <a href="https://www.facebook.com/loveparisbaguette/" target="_blank" class="facebook">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                        <a href="https://instagram.com/parisbaguette_kr" target="_blank" class="instagram">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                        <a href="https://www.youtube.com/user/loveparisbaguette" target="_blank" class="youtube">
+                                            <i class="fab fa-youtube"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="ced">
+        <ul id="menu-footer-menu" class="footer-menu">
+            <li id="menu-item-6114" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6114">
+                <a target="_blank" rel="noopener noreferrer" href="https://www.happypointcard.com/serviceCenter/term1.spc">
+                    <span>이용약관</span>
+
+                </a>
+
+            </li>
+            <li id="menu-item-57" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-57" style="font-weight: 900;"><a href="https://www.paris.co.kr/privacy-policy/">
+                    <span>개인정보처리방침</span>
+
+                </a>
+
+            </li>
+            <li id="menu-item-55" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-55">
+                <a href="https://www.paris.co.kr/email-policy/">
+                    <span>이메일무단수집거부</span>
+
+                </a>
+
+            </li>
+            <li id="menu-item-54" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54">
+                <a href="https://www.paris.co.kr/media-policy/">
+                    <span>영상정보처리기기운영관리방침</span>
+
+                </a>
+
+            </li>
+            <div class="copy">
+                <span>All Rights Reserved © PARIS BAGUETTE, PARIS CROISSANT CO., LTD.</span>
+                <span>경기도 성남시 중원구 상대원동 사기막골로 31번길 18 (주) 파리크라상</span>
+            </div>
+
+        </ul>
+    </div>
+
+</body>
+<script src="index.js"></script>
+
+</html>
