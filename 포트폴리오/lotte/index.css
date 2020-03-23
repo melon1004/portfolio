@@ -1,0 +1,1771 @@
+/*  폰트 적용 */
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+html {
+    font-family:  "Noto Sans KR", sans-serif;
+}
+
+/* 노말라이즈 */
+body, ul, li, h1 {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+a {
+    color:inherit;
+    text-decoration:none;
+}
+
+/* 라이브러리 */
+.con {
+    margin:0 auto;
+}
+
+.img-box > img {
+    width:100%;
+    display:block;
+}
+
+.row::after {
+    content:"";
+    display:block;
+    clear:both;
+}
+
+.cell {
+    float:left;
+    box-sizing:border-box;
+}
+
+.cell-right {
+    float:right;
+    box-sizing:border-box;
+}
+
+.margin-0-auto {
+    margin:0 auto;
+}
+
+.block {
+    display:block;
+}
+
+.inline-block {
+    display:inline-block;
+}
+
+.text-align-center {
+    text-align:center;
+}
+
+.line-height-0-ch-only {
+    line-height:0;
+}
+
+.line-height-0-ch-only > * {
+    line-height:normal;
+}
+
+.relative {
+    position:relative;
+}
+
+.absolute-left {
+    position:absolute;
+    left:0;
+}
+
+.absolute-right {
+    position:absolute;
+    right:0;
+}
+
+.absolute-middle {
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+.width-100p {
+    width:100%;
+}
+
+.table {
+    display:table;
+}
+
+.table-cell {
+    display:table-cell;
+}
+
+.vertical-align-top {
+    vertical-align:top;
+}
+
+.vertical-align-middle {
+    vertical-align:middle;
+}
+
+.vertical-align-bottom {
+    vertical-align:bottom;
+}
+
+/* 커스텀 */
+
+.con {
+    width:1152px;
+}
+
+.con-min-width {
+    min-width:1903px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.why {
+    top:0;
+    right:0;
+    position:fixed;
+    background:#21201e;
+    width:64px;
+    height:969px;
+    transition: 0.45s;
+    z-index:2;
+}
+.why:hover {
+    width:200px;
+}
+.quickH {
+    position: relative;
+    height: 287px;
+    background: #7c6c5d;
+}
+.quickH a {
+    overflow: hidden;
+    display: block;
+    position: relative;
+    height: 100%;
+    background: url(https://www.busanparadisehotel.co.kr/resource/images/pc/common/btn/btn_quick_arrow.png) no-repeat 24px 120%;
+}
+.quickH p {
+    display: none;
+    width: 172px;
+    margin: 0 0 0 24px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+}
+.why:hover .quickH p {
+    display:block;
+}
+
+.quickH:before {
+    content: '';
+    position: absolute;
+    top: 62px;
+    left: 23px;
+    width: 21px;
+    height: 23px;
+    background: url(https://www.busanparadisehotel.co.kr/resource/images/pc/common/icon/icon_reservation.png) no-repeat 0 0;
+}
+.why:hover .quickH a {
+    background-position:24px 246px;
+}
+.quickH a {
+    overflow: hidden;
+    display: block;
+    position: relative;
+    height: 100%;
+    background: url(https://www.busanparadisehotel.co.kr/resource/images/pc/common/btn/btn_quick_arrow.png) no-repeat 24px 120%;
+}
+.quickH h1 {
+    margin: 180px 0 0 0;
+    padding-right: 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 450;
+    transform: rotate(-90deg);
+    word-break: keep-all;
+}
+.why:hover .quickH h1 {
+    margin:100px 0 8px 24px;
+    font-size:18px;
+    transform: rotate(0deg);
+}
+
+.quickC {
+    background: #21201e;
+}
+.quickC li a {
+    display: table;
+    width: 100%;
+    height: 63px;
+    border-bottom: 1px solid #2c2b29;
+    vertical-align: middle;
+    color: rgba(255,255,255,0.8);
+    font-size:12px;
+    transition: all .3s ease;
+}
+.quickC li a p , .quickC li a p span  {
+    display:none;
+}
+.why:hover .quickC li a p , .why:hover .quickC li a p span  {
+    margin-left:30px;
+    display:block;
+}
+.why:hover .quickC li a p span:last-child {
+    color:rgba(255,255,255,0.7);
+}
+.why:hover .quickC li a:hover p span:last-child {
+    color:#fff;
+}
+.why:hover .quickC li a p {
+    margin-top:-24px;
+}
+.quickC li a:hover {
+    background:#67594d;
+}
+.quickC li a:hover > p > span {
+    color:rgba(255,255,255,0.4);
+    font-size: 12px;
+}
+.quickC li span {
+    display: block;
+    color: #545452;
+}
+
+.quickC li a:hover em i {
+    transform:scale(1);
+    margin-top:24px;
+    line-height:23px;
+}
+.quickC li a:hover p {
+    display:inline-block;
+    vertical-align: middle;
+    text-transform: uppercase;
+    transition: all .3s ease;
+    margin-left:20px;
+}
+.quickC > li > a > p {
+    color:#fff;
+    display:inline-block;
+}
+
+.quickC li .icon1 i {
+    width: 22px;
+    height: 19px;
+    background-position: 0 0;
+    margin-left:23px;
+
+}
+
+.quickC li em i {
+    display: inline-block;
+    vertical-align: middle;
+    background: url(https://www.busanparadisehotel.co.kr/resource/images/pc/common/bg_quick.png) no-repeat;
+    opacity: 0.4;
+    transition: all .3s ease;
+    margin-top:23px;
+}
+
+.quickC li .icon2 i {
+    width: 20px;
+    height: 20px;
+    background-position: 0 -25px;
+    margin-left:23px;
+    margin-top:22px;
+}
+
+
+.quickC li .icon3 i {
+    width: 22px;
+    height: 21px;
+    background-position: 0 -51px;
+    margin-left:23px;
+    margin-top:22px;
+}
+.quickC li em i {
+    display: inline-block;
+    vertical-align: middle;
+    background: url(https://www.busanparadisehotel.co.kr/resource/images/pc/common/bg_quick.png) no-repeat;
+    opacity: 0.4;
+    transition: all .3s ease;
+}
+.quickC li .icon4 i {
+    width: 23px;
+    height: 23px;
+    background-position: 0 -78px;
+    margin-left:23px;
+    margin-top:22px;
+}
+.quickC li em i {
+    display: inline-block;
+    vertical-align: middle;
+    background: url(https://www.busanparadisehotel.co.kr/resource/images/pc/common/bg_quick.png) no-repeat;
+    opacity: 0.4;
+    transition: all .3s ease;
+}
+.quickC li .icon5 i {
+    width: 24px;
+    height: 20px;
+    background-position: 0 -107px;
+    margin-left:23px;
+    margin-top:22px;
+}
+.quickC li em i {
+    display: inline-block;
+    vertical-align: middle;
+    background: url(https://www.busanparadisehotel.co.kr/resource/images/pc/common/bg_quick.png) no-repeat;
+    opacity: 0.4;
+    transition: all .3s ease;
+}
+.quickC li .icon6 i {
+    width: 25px;
+    height: 24px;
+    background-position: 0 -131px;
+    margin-left:23px;
+    margin-top:22px;
+}
+.quickC li em i {
+    display: inline-block;
+    vertical-align: middle;
+    background: url(https://www.busanparadisehotel.co.kr/resource/images/pc/common/bg_quick.png) no-repeat;
+    opacity: 0.4;
+    transition: all .3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.top-bar {
+    top:0;
+    left:0;
+    position:absolute;
+    width:100%;
+    z-index:100;
+    transition:background-color 0.4s;
+}
+
+.top-bar.top-bar-ride-menu-box-2-item-on {
+    background-color:rgba(33,32,30,.9);
+}
+
+
+.top-bar > div > .logo {
+    margin-top:35px;
+    margin-left:20px;
+}
+.top-bar > div > .menu-box-2 {
+    margin-left:35px;
+}
+.top-bar > div > .menu-box-2 li > a {
+    color:white;
+    display:block;
+    padding:20px 10px;
+}
+
+.top-bar > div > .menu-box-2 > ul > li > a {
+    padding:35px 10px;
+    position:relative;
+    font-size:14px;
+    font-weight:;
+}
+
+.top-bar > div  > .menu-box-2 > ul > li > a::after {
+    content:"";
+    display:block;
+    position:absolute;
+    bottom:0;
+    left:50%;
+    transform:translateX(-50%);
+    width:0;
+    height:3px;
+    background-color:#9C836A;
+    transition:width 0.3s;
+}
+
+.top-bar > div > .menu-box-2  > ul:hover > li > div {
+    z-index:1;
+}
+
+.top-bar > div > .menu-box-2  > ul > li.on > div {
+    z-index:2;
+}
+
+.top-bar > div > .menu-box-2 > ul > li:hover > a::after {
+    width:calc(100% - 20px);
+}
+
+.top-bar > div > .menu-box-2 > ul > li:hover > div {
+    display:block;
+}
+
+.top-bar > div > .menu-box-2 > ul > li > div {
+    display:none;
+    position:absolute;
+    left:0;
+    right:0;
+    background-color:rgba(33,32,30,.9);
+    font-size:13px;
+}
+
+.top-bar > div > .menu-box-2 > ul > li:nth-child(1) > div {
+    padding-left:90px;
+}
+
+.top-bar > div > .menu-box-2 > ul > li:nth-child(2) > div {
+    padding-left:205px;
+}
+.top-bar > div > .menu-box-2 > ul > li:nth-child(3) > div {
+    padding-left:305px;
+}
+.top-bar > div > .menu-box-2 > ul > li:nth-child(4) > div {
+    padding-left:405px;
+}
+.top-bar > div > .menu-box-2 > ul > li:nth-child(5) > div {
+    padding-left:505px;
+}
+.top-bar > div > .menu-box-2 > ul > li:nth-child(6) > div {
+    padding-left:505px;
+}
+.top-bar > div > .menu-box-2 > ul > li:nth-child(7) > div {
+    padding-left:505px;
+}
+.top-bar > div > .menu-box-2 > ul > li > div > div > div > ul > li > ul > li:nth-child(1) {
+    margin-left:-50px;
+}
+.top-bar > div > .menu-box-2 > ul > li > div > div > div > ul > li > .f-1 > li:nth-child(1) {
+    margin-left:40px;
+}
+.top-bar > div > .menu-box-2 > ul > li > div > div > div > ul > li > .f-2 > li:nth-child(1) {
+    margin-left:140px;
+}
+.top-bar > div > .menu-box-2 > ul > li > div > div > div > ul > li > .f-3 > li:nth-child(1) {
+    margin-left:240px;
+}
+.top-bar > div > .menu-box-2 > ul > li > div > div > div > ul > li > .f-4 > li:nth-child(1) {
+    margin-left:240px;
+}
+.top-bar > div  > .menu-box-2 > ul > li > div > div > div > ul > li > ul {
+    display:none;
+    position:absolute;
+    background-color:rgba(33,32,30,.9);
+    left:0;
+    right:0;
+    padding-left:265px;
+}
+.top-bar > div > .menu-box-2 > ul > li > div > div > div > ul > li > a {
+    color:#777777;
+}
+.top-bar > div > .menu-box-2 > ul > li > div > div > div > ul > li > ul > li > a {
+    color:#6C5246;
+} 
+.top-bar > div > .menu-box-2 > ul > li > div > div > div > ul > li > ul > li > a:hover {
+    color:#777777;
+}
+.top-bar > div > .menu-box-2 > ul > li > div > div > div > ul > li > a {
+    position:relative;
+}
+
+.top-bar > div > .menu-box-2 > ul > li > div > div > div > ul > li > a:not(:only-child)::after {
+    content:"";
+    display:block;
+    position:absolute;
+    bottom:0;
+    left:50%;
+    transform:translateX(-50%);
+    width:0;
+    height:1px;
+    background-color:#AF6E52;
+    transition:width 0.3s;    
+}
+.top-bar > div > .menu-box-2 > ul > li > div > div > div > ul > li:hover > a:not(:only-child)::after {
+    width:calc(100% - 20px);
+}
+.top-bar > div > .menu-box-2 > ul > li > div > div > div > ul > li > a:hover {
+    color:#9C836A;
+}
+.top-bar > div > .menu-box-2 > ul > li > div > div > div > ul > li:hover > ul {
+    display:block;
+}
+
+/*메뉴 오른쪽 시작*/
+
+.top-bar .cell-right {
+    margin-top:8px;
+    margin-right:90px;
+}
+.top-bar .cell-right .cell {
+    padding-right:25px;
+}
+.top-bar .cell-right {
+    position:relative;
+}
+.top-bar .cell-right > div  {
+    font-size:12px;
+    color:rgba(255,255,255,0.6);
+}
+.top-bar .cell-right > div:hover > a {
+    color:#9C836A;
+}
+.top-bar .cell-right > div > ul {
+    display:block;
+    position:absolute;
+    width:0 auto;
+    border:1px solid black;
+    background-color:white;
+    padding-bottom:9px;
+    top:35px;
+    text-align:center;
+    z-index:10;
+}
+.top-bar .cell-right > div > ul > li {
+    text-align:center;
+    background-color:white;
+    padding:0px 9px;
+    font-size:12px;
+    padding-top:11px;
+
+}
+.top-bar .cell-right > ul > li {
+    position:absolute;
+    width:100%;
+    display:none;
+}
+.top-bar .cell-right > div > ul::before {
+    content:"";
+    display:block;
+    position:absolute;
+    width:0;
+    bottom:0;
+    border-radius: 0;
+    border-color: #666;
+    text-align: center;
+
+}
+.top-bar .cell-right > div > ul::after {
+    content:"";
+    position:absolute;
+    width:10px;
+    height:10px;
+    border:1px solid black;
+    transform:translateX(-50%) rotate(45deg);
+    background-color:white;
+    top:-4px;
+    text-align:center;
+    /* 유령의 간의 우열 */
+    z-index:-1;
+}
+.top-bar .cell-right > div > ul {
+    display:none;
+    
+}
+
+.top-bar .cell-right > div:hover > ul {
+    display:block;
+    position:absolute;
+    text-align:center;
+    font-size:10px;
+    margin:0 -10px;
+}
+
+/* 슬라이더 */
+
+.pages > .page-1 {
+    background-image:url(https://sdc-club.com/assets/images/main/bg_main_banner_1.jpg);
+    height:100vh;
+    background-size:cover;
+
+}*/
+
+
+/* 임시 */
+body {
+    min-height:200vh;
+}
+.scroll-top-over-200 .top-bar {
+    z-index:1;
+}
+.scroll-top-over-200 .top-bar .cell-right {
+    margin-top:15px;
+}
+
+.scroll-top-over-200 .top-bar .cell-right > div:hover > a {
+    color:brown;
+}
+
+.scroll-top-over-200 .top-bar .ride {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background-color:#9C836A;
+    border-bottom: 1px solid #dcdcdc;
+    animation: set_fixed_official_gnb .4s linear both;
+}
+@keyframes set_fixed_official_gnb {
+    0% {
+        transition: .4s linear both;
+        transform: translate(0, -50%);
+    }
+}
+
+
+
+/*메이페이지 */
+
+
+
+body {
+    overflow-y:scroll;
+}
+
+.box-1 {
+    overflow:hidden;
+}
+
+.box-1 > ul > li {
+    width:25%;
+}
+
+.box-1 > ul > li > .content-box {
+    height:100vh;
+    cursor:pointer;
+    position:relative;
+    color:white;
+    border-left:1px solid rgba(255,255,255,0.4);
+}
+
+.box-1 > ul > li > .content-box > h1 {
+    position:absolute;
+    top:40%;
+    transform:translateY(-60%);
+}
+
+.box-1 > ul > li > .content-box + .bg-box {
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    z-index:-2;
+}
+
+.box-1 > ul > li:nth-child(1) > .content-box + .bg-box {
+    right:75%;
+}
+
+.box-1 > ul > li:nth-child(2) > .content-box + .bg-box {
+    left:25%;
+    right:50%;
+}
+
+.box-1 > ul > li:nth-child(3) > .content-box + .bg-box {
+    left:50%;
+    right:25%;
+}
+
+.box-1 > ul > li:nth-child(4) > .content-box + .bg-box {
+    left:75%;
+}
+
+.box-1 > ul > li > .content-box:hover + .bg-box {
+    left:0;
+    right:0;
+    transform:scale(1.05);
+    transition:left 0.7s 0.2s, right 0.7s 0.2s, transform 5s 1s;
+    z-index:-1;
+}
+
+.box-1 > ul:hover > li > .content-box > .dff {
+    color:rgba(255,255,255,0.5);
+}
+.box-1 > ul > li > .content-box > .dff {
+    background-repeat:no-repeat;
+    background-position: 0 0;
+    display:block;
+    width:22px;
+    height:21px;
+    margin-left:10px;
+}
+
+
+.box-1 > ul > li > .content-box > .box-2 > ul > li > a > h2 {
+    margin-bottom: 7px;
+    font-size: 14px;
+    color: #fff;
+    font-family: 'roboto';
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.box-1 > ul > li > .content-box > .box-2 > ul > li > a > p {
+    font-size:12px;
+    font-weight:200;
+    color: rgba(255,255,255,0.5);
+    line-height: 18px;
+}
+
+
+.box-1 > ul > li > .content-box > .dgg {
+    width:24px;
+    background-position: 0 -23px;
+    height:21px;
+}
+.box-1 > ul > li > .content-box > .sdd {
+    width:18px;
+    background-position: 0 -46px;
+    height:21px;
+}
+.box-1 > ul > li > .content-box > .sds {
+    width:24px;
+    background-position: 0 -93px;
+    height:24px;
+}
+.box-1 > ul > li > .content-box > h1 > p {
+    font-size:22px;
+    margin-top:30px;
+    width:399px;
+}
+.box-1 > ul > li > .content-box > h1 > p.df {
+    margin-top:-20px;
+    font-size:12px;
+    font-weight:300;
+}
+
+.box-1 > ul:hover > li:hover > .content-box > h1 {
+    color:rgba(255,255,255,1);
+    transition:color 0.7s 0.2s, transform 0.7s 0.2s;
+}
+
+.box-1 > ul:hover > li:hover > .content-box > h1.up-100px-on-active {
+    transform:translateY(-100px);
+}
+
+.box-1 > ul:hover > li:hover > .content-box > h1.up-200px-on-active {
+    transform:translateY(-200px);
+}
+
+.box-1 > ul > li > .content-box > .box-2 {
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    transform:translateY(100%);
+}
+.box-1 > ul > li > .content-box > .bg {
+    background: #7c6c5d;
+}
+.box-1 > ul > li > .content-box > .bg-1 {
+    background: #5c6f6f;
+}
+.box-1 > ul > li > .content-box > .bg-2 {
+    background: #6b6563;
+}
+.box-1 > ul > li > .content-box > .bg-3 {
+    background: #8e8270;
+}
+
+
+.box-1 > ul > li > .content-box:hover > .box-2 {
+    transform:translateY(0);
+    transition:transform 0.7s 0.2s;
+}
+
+.box-1 > ul > li > .content-box > .box-2 > ul > li > a {
+    padding:10px 0;
+    font-size:2rem;
+    display:block;
+    border-bottom:1px solid rgba(255,255,255,0.1);
+    margin-left:10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 3 차 */
+
+
+
+
+
+
+
+.bn3 {
+    margin-left:5%;
+}
+.box-2-title > .bb > span {
+    margin-top:70px;
+   font-size:30px;
+   font-weight:700;
+    margin-bottom:15px;
+   color:#9C836A;
+}
+.box-2-title > .gr > span {
+   font-size:16px;
+   font-weight:500;
+   color:#666666;
+   padding-bottom:70px;
+}
+.box-2 > .menu-box-1  {
+    margin-top:20px;
+    text-align:center;
+}
+.box-2 > .menu-box-1 > ul > div {
+    width:calc(100% / 4);
+    width: 256px;
+    margin-right: 20px;
+    border: 1px solid #d8d8d8;
+}
+
+.box-2 > .menu-box-1 > ul > div > div {
+    box-sizing:border-box;
+}
+.box-2 > .menu-box-1 > ul > div > div > .img {
+    background-size: cover;
+    overflow:hidden;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.box-2 > .menu-box-1 > ul > div > div > .img img {
+    width: 256px;
+    height: 169px;
+}
+.one {
+    margin-top:5px;
+}
+ul div:hover .img:not(.noScale) > img {
+    transform: scale(1.06);
+}
+ul div .img:not(.noScale) > img {
+    transition: 0.45s;
+}
+.box-2 > .menu-box-1 > ul > div > div > .one-1 {
+    padding:20px 25px 30px;
+    height:136px;
+}
+.box-2 > .menu-box-1 > ul > div > div > .one-1 > .font-6 {
+    font-size:12px;
+    color:rgba(0,0,0,0.7);
+}
+.box-2 > .menu-box-1 > ul > div > div > .one-1 > .font-67 {
+    margin-top:-10px;
+}
+.box-2 > .menu-box-1 > ul > div > div > .one-1 > .font-7 {
+    font-size:14px;
+    color:rgba(0,0,0,0.85);
+    font-weight:450;
+    margin-top:-0;
+}
+.box-2 > .menu-box-1 > ul > div > div > .one-1 > .font-8 {
+    font-size:12px;
+    color:rgba(0,0,0,0.65);
+    margin-left:-76px;
+    margin-top:30px;
+}
+.box-2 > .menu-box-1 > ul > div > div > .one-2 > .font-7 {
+    margin-top:20px;
+    margin-left:-22px;
+}
+.box-2 > .menu-box-1 > ul > div > div > .one-2 > .font-8 {
+    margin-left:-76px;
+    margin-top:50px;
+}
+.box-2 > .menu-box-1 > ul > div > div > .one-3 > .font-7 {
+    margin-top:20px;
+}
+.box-2 > .menu-box-1 > ul > div > div > .one-3 > .font-8 {
+    margin-top:50px;
+}
+.box-2 > .menu-box-1 > ul > div > div > .one-4 > .font-7 {
+    margin-top:20px;
+    margin-left:-58px;
+}
+.box-2 > .menu-box-1 > ul > div > div > .one-4 > .font-8 {
+    margin-right:0px;
+    margin-top:50px;
+}
+
+.box-2 > .menu-box-1 > ul > div > div > div > span {
+    margin-top:-10px;
+    font-weight:450;
+    font-size:14px;
+    color:rgba(0,0,0,0.85);
+}
+
+.box-3 > p {
+    font-size:14px;
+    font-weight:300;
+    margin-top:80px;
+    text-decoration:underline;
+    color:#9C836A;
+    margin-bottom:80px;
+}
+
+
+
+
+
+.box-2-title > div {
+    overflow:hidden;
+}
+
+.box-2-title > div > span {
+    display:block;
+    transform:translateY(100%);
+}
+
+.box-2-title.active > div > span {
+    transition:transform 0.3s 0.2s;
+    transform:translateY(0);
+}
+
+.box-2-title.active > div:nth-child(2) > span {
+    transition:transform 0.3s 0.4s;
+}
+
+
+.menu-box-1 > .row > .cell.active-on-visible {
+    transform:translateY(40px);
+    opacity:0;
+    transition: transform .5s, opacity .5s;
+}
+
+.menu-box-1 > .row > .cell.active-on-visible.active {
+    transform:translateY(0);
+    opacity:1;
+}
+
+
+
+
+
+
+
+
+
+
+/*  4차  */
+
+
+
+
+
+
+
+
+
+.t5 {
+    margin-left:5%;
+}
+.gray {
+    background:#F9F9F9;
+    padding-bottom:50px;
+    padding-top:50px;
+}
+.box-3-title > h1 {
+   font-size:30px;
+   font-weight:700;
+   color:#9C836A;
+}
+.box-3-title > p {
+   font-size:16px;
+   font-weight:500;
+   color:#666666;
+    padding-bottom:70px;
+}
+.box-6 > .menu-box-1  {
+    margin-top:20px;
+    text-align:center;
+}
+.box-6 > .menu-box-1 > ul > li {
+    width:calc(100% / 3);
+    float: left;
+    width: 352px;
+    margin-right: 20px;
+}
+
+.box-6 > .menu-box-1 > ul > li > a {
+    box-sizing:border-box;
+}
+.box-6 > .menu-box-1 > ul > li > a > .img {
+    background-size: cover;
+    overflow:hidden;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.box-6 > .menu-box-1 > ul > li > a > .img img {
+    width: 352px;
+    height: 232px;
+}
+ul li:hover .img:not(.noScale) > img {
+    transform: scale(1.06);
+}
+ul li .img:not(.noScale) > img {
+    transition: 0.45s;
+}
+.box-6 > .menu-box-1 > ul > li > a > .txt {
+    padding:20px 0px 30px;
+    height:99.9px;
+}
+.box-6 > .menu-box-1 > ul > li > a > .txt > .vvv {
+    font-size:14px;
+    color:#333333;
+    font-weight:450;
+}
+.box-6 > .menu-box-1 > ul > li > a > .txt > .sub {
+    overflow: hidden;
+    display: block;
+    height: 40px;
+    margin: 12px 0 16px;
+    color: #666;
+    font-size:14px;
+    word-break: keep-all;
+    line-height: 20px;
+    font-weight:300;
+}
+.box-6 > .menu-box-1 > ul > li > a > .txt > .sub-1 {
+    margin-left:-175px;
+    margin-top:35px;
+}
+.box-6 > .menu-box-1 > ul > li > a > .txt > .subb {
+    margin-top:-40px;
+}
+
+.box-6 > .menu-box-1 > ul > li > a > .txt > .date {
+    font-size:12px;
+    color:#999;
+    font-weight:450;
+    margin:2px 0 0;
+    margin-top:78px;
+    font-weight:300;
+    margin-left:-322px;
+}
+.box-6 > .menu-box-1 > ul > li > a > .txt > .daad {
+    margin-left:-175px;
+    margin-top:98px;
+}
+.box-6 > .menu-box-1 > ul > li > a > .txt > .dd-1 {
+    margin-left:-85px;
+    margin-top:10px;
+}
+
+
+
+
+.box-5 > p {
+    font-size:14px;
+    font-weight:300;
+    margin-top:20px;
+    text-decoration:underline;
+    color:#9C836A;
+}
+
+
+
+
+
+
+
+/* 5차  */
+
+
+
+
+
+
+
+
+.t6 {
+    margin-left:5%;
+}
+.box-3-title > .bb > span {
+    margin-top:70px;
+   font-size:30px;
+   font-weight:700;
+   color:#9C836A;
+   margin-bottom:15px;
+}
+.box-3-title > .gr > span {
+   font-size:16px;
+   font-weight:500;
+   color:#666666;
+    padding-bottom:70px;
+}
+.box-2 > .menu-box-1  {
+    margin-top:20px;
+    text-align:center;
+}
+.box-2 > .menu-box-1 > ul > li {
+    width:calc(100% / 3);
+    float: left;
+    width: 352px;
+    margin-right: 20px;
+}
+
+.box-2 > .menu-box-1 > ul > li {
+    box-sizing:border-box;
+}
+
+
+
+
+
+
+
+
+.box-2 > .menu-box-1 > ul > li {
+    position:relative;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.24);
+    transition: box-shadow 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.box-2 > .menu-box-1 > ul > li:hover {
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.22);
+}
+
+.box-2 > .menu-box-1 > ul > li > .border-line {
+    position:absolute;
+    width:3px;
+    height:3px;
+    background-color:gold;
+    transition:width .5s, height .5s;
+}
+
+.box-2 > .menu-box-1 > ul > li > .border-line:first-child {
+    width:0;
+}
+
+.box-2 > .menu-box-1 > ul > li:hover > .border-line:first-child {
+    width:100%;
+}
+
+.box-2 > .menu-box-1 > ul > li > .border-line:nth-child(2) {
+    height:0;
+    top:0;
+    right:0;
+}
+
+.box-2 > .menu-box-1 > ul > li:hover > .border-line:nth-child(2) {
+    height:100%;
+    transition-delay:.2s;
+}
+
+
+
+.box-2 > .menu-box-1 > ul > li > .border-line:nth-child(4) {
+    width:0;
+    bottom:0;
+}
+
+.box-2 > .menu-box-1 > ul > li:hover > .border-line:nth-child(4){
+    width:100%;
+}
+
+.box-2 > .menu-box-1 > ul > li > .border-line:nth-child(3) {
+    height:0;
+    top:0;
+    left:0;
+}
+
+.box-2 > .menu-box-1 > ul > li:hover > .border-line:nth-child(3) {
+    height:100%;
+    transition-delay:.2s;
+}
+
+
+
+
+
+
+
+.box-2 > .menu-box-1 > ul > li  > .img {
+    background-size: cover;
+    overflow:hidden;
+    background-repeat:no-repeat;
+    background-position:center;
+    position: relative;
+    display:inline-block;
+    width: 352px;
+    height: 432px;
+}
+.box-2 > .menu-box-1 > ul > li:hover > div > .cover {
+    opacity: 1;
+}
+.box-2 > .menu-box-1 > ul > li > div > .cover{
+    position:absolute;
+    display:block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    vertical-align: middle;
+    opacity: 0;
+    background: rgba(0,0,0,0.8);
+    transition: all .3s ease;
+}
+.box-2 > .menu-box-1 > ul > li > div > .cover div {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    font-size: 14px;
+    color: #fff;
+    transform: translateY(-50%);
+}
+.box-2 > .menu-box-1 > ul > li:hover > div > .cover div p {
+    padding: 0 30px;
+    line-height: 22px;
+    transform: translateY(-10px);
+    transition: all .3s ease;
+}
+.box-2 > .menu-box-1 > ul > li:hover > div > .cover div a {
+    display: inline-block;
+    margin-top: 20px;
+    transform: translateY(10px);
+    width:117.53px;
+    height:40px;
+    border:1px solid #fff;
+    transition: all .3s ease;
+}
+.box-2 > .menu-box-1 > ul > li > div > .cover div p {
+    padding: 0 30px;
+    line-height: 22px;
+    transform: translateY(10px);
+    transition: all .3s ease;
+}
+.box-2 > .menu-box-1 > ul > li > div > .cover div a {
+    display: inline-block;
+    margin-top: 20px;
+    vertical-align:middle;
+    transform: translateY(-10px);
+    transition: all .3s ease;
+}
+.btn.small2 {
+    min-width: auto;
+    font-size: 14px;
+    height: 40px;
+    line-height: 38px;
+}
+.btn.btnLine2:hover {
+    border-color: #fff;
+    color: #000;
+    background: #fff;
+}
+ul li:hover .img:not(.noScale) > img {
+    transform: scale(1.06);
+}
+ul li .img:not(.noScale) > img {
+    transition: 0.45s;
+}
+.box-2 > .menu-box-1 > ul > li > .text {
+    font-size:14px;
+    font-weight:450;
+}
+
+
+
+.menu-box-1 > .row > .cell.active-on-visible {
+    transform:translateY(40px);
+    opacity:0;
+    transition: transform .5s, opacity .5s;
+}
+
+.menu-box-1 > .row > .cell.active-on-visible.active {
+    transform:translateY(0);
+    opacity:1;
+}
+
+
+.box-3-title > div {
+    overflow:hidden;
+}
+
+.box-3-title > div > span {
+    display:block;
+    transform:translateY(100%);
+}
+
+.box-3-title.active > div > span {
+    transition:transform 0.3s 0.2s;
+    transform:translateY(0);
+}
+
+.box-3-title.active > div:nth-child(2) > span {
+    transition:transform 0.3s 0.4s;
+}
+
+
+
+
+
+
+
+
+/*    6차 */
+
+
+
+
+
+
+
+
+
+
+
+/* .conn {
+    width:1280px;
+} */
+
+
+.g8 {
+    margin-left:5%;
+}
+.box-7 {
+    margin-top:200px;
+}
+.box-7 > .menu-box-1  {
+    margin-top:20px;
+    text-align:center;
+}
+
+
+.box-7 > .menu-box-1 > ul > li > a {
+    box-sizing:border-box;
+}
+
+.d003-banner {
+    background-color: #ebe6de;
+    display: table;
+    width: calc(100% / 4);
+    height: 320px;
+}
+
+.d003-banner__inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.d003-banner__title {
+    font-size: 24px;
+    color: #685f51;
+}
+
+.d003-banner__tag {
+    font-size: 13px;
+    color: #685f51;
+    padding: 6px 0 45px 0;
+    background: url(https://www.lottehotel.com/content/dam/lottehotel/components/common/content/common/d003-main-instagram/icon-instagram.png) no-repeat 50% 100%;
+    background-size: 30px 30px;
+}
+.d003 .d003-item__layout {
+    display: table;
+    width: 320px;
+    height: 320px;
+}
+.box-7 > .menu-box-1 > ul > li > a > .img {
+    background-size: cover;
+    overflow:hidden;
+    background-repeat:no-repeat;
+    background-position:center;
+    width: 320px;
+    height: 320px;
+}
+.box-7 > .menu-box-1 > ul > li > a > .img-1 {
+    position:absolute;
+    margin-top:-420px;
+    margin-left:20px;
+}
+.box-7 > .menu-box-1 > ul > li > a > .img img {
+    background-size: cover;
+    overflow:hidden;
+    background-position:center;
+    width: 320px;
+    height: 320px;
+}
+ul li:hover .img:not(.noScale) > img {
+    transform: scale(1.06);
+}
+ul li .img:not(.noScale) > img {
+    transition: 0.45s;
+}
+
+
+
+.d084-news__title {
+    font-size: 20px;
+    font-weight:bold;
+    display: block;
+    padding-bottom: 6px;
+    color:#333;
+    font-family: "Open Sans Bold",Noto-lang-Bold,"Malgun Gothic",sans-serif;
+}
+
+
+.d084-form .d084-form__inp .input .input__wrap > button {
+    font-family: "Open Sans Bold",Noto-lang-Bold,"Malgun Gothic",sans-serif;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    border: 0;
+    border-radius: 0;
+    background: 0;
+    color: #333;
+    letter-spacing: -1px;
+    vertical-align: top;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 155px;
+    font-size: 15px;
+    line-height: 40px;
+    background-color: #888;
+    color: #fff;
+    height: 50px;
+    margin-top:-47px;
+    margin-left:900px;
+    line-height: 50px;
+    font-size: 16px;
+}
+.d084__button:active, .d084__button:focus, .d084__button:hover {
+    background-color: #555;
+}
+.d084-form .input__placeholder {
+    line-height: 50px;
+    font-size: 16px;
+}
+.d084 {
+    position:relative;
+}
+.d084 .input__placeholder {
+    position:absolute;
+    z-index: 2;
+    left:280px;
+    top: -64px;
+    padding: 0 15px;
+    color: #666;
+    font-size: 14px;
+    margin-top:94px;
+    line-height: 40px;
+    pointer-events: none;
+}
+.d084-form .o-input {
+    position:absolute;
+    top:25px;
+    left:280px;
+    background-color: #fff;
+    border: 1px solid #cbcbcb;
+    height: 47px;
+    line-height: 50px;
+    width:615px;
+    font-size: 16px;
+}
+.d084-form .d084-form__inp .input .input__wrap > span {
+    font-size: 16px;
+}
+.d084-news__desc__under {
+    text-align:center;
+    margin-left:-51px;
+    color:#666;
+    font-size:14px;
+}
+.d084-news__desc__under .d084__btn__pop {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.d084-news__desc__under > a {
+    color: #333;
+    text-decoration: none;
+}
+.d084-trip {
+    position:relative;
+    left:0px;
+    margin-top:90px;
+}
+
+.d084-trip__logo img {
+    width: 130px;
+    margin-top:20px;
+    margin-left:-80px;
+}
+.d084-trip__review {
+    margin-top:0;
+    margin-left:1350px;
+}
+.d084-trip__review span {
+    color: #00af87;
+    font-family: "Open Sans Bold",Noto-lang-Bold,"Malgun Gothic",sans-serif;
+}
+
+
+
+.s125__copy {
+    font-size: 10px;
+    line-height: 15px;
+    color: #999;
+    text-align: center;
+    padding: 0 15px;
+    margin-top:90px;
+}
+.hee {
+    margin-top:50px;
+}
+.s079-align--center {
+    text-align: center;
+}
+.s026-background--gray-full-gray {
+    background: #f4f4f4;
+    padding-top:40px;
+    padding-bottom:40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 마지막 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+.s099 {
+    background:#555;
+    padding-top:20px;
+    padding-bottom:15px;
+}
+.s099  > div >ul > li >a {
+    margin-left:20px;
+}
+.s099__sns a {
+    width: 28px;
+    height: 28px;
+}
+.s099__sns .img-1 {
+    width:58.14px;
+    height:28px;
+}
+.s099__sns .img-2 {
+    width:35.83px;
+    height:28px;
+}
+.s099__sns .img-3 {
+    width:31.64px;
+    height:28px;
+}
+.s099__sns .img-4 {
+    width:31.64px;
+    height:28px;
+}
+.s099__sns .img-5 {
+    width:44.8px;
+    height:28px;
+}
+.s099__sns .img-6 {
+    width:26.95px;
+    height:28px;
+}
+
+
+.s100__inner {
+    background:#000;
+    color:#999;
+    font-size:14px;
+}
+.s100__inner {
+    padding: 60px 15px 41px;
+    max-width: 1440px;
+    min-height: 254px;
+    height: auto;
+    margin: 0 auto;
+}
+.s100-link {
+    text-align: left;
+    float: right;
+    width: 690px;
+    margin-top:-210px;
+}
+.s100-link__list {
+    width: 33.33%;
+    float: left;
+    width:199.97px;
+    padding-left:30px;
+}
+
+.s100-link__item {
+    color: #999;
+    display: block;
+    margin-bottom: 10px;
+    line-height: 18px;
+    letter-spacing:-2px;
+    font-size:14px;
+}
+.s100-store__button--ios {
+    background-image: url(https://www.lottehotel.com/content/dam/lottehotel/components/common/structure/footer/s100-footer-menu/app-ios.png);
+}
+.s100-store__button--android {
+    background-image: url(https://www.lottehotel.com/content/dam/lottehotel/components/common/structure/footer/s100-footer-menu/app-android.png);
+}
+.s100-store__button {
+    font-size: 16px;
+    display: block;
+    color: #999;
+    padding-left: 26px;
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    height: 25px;
+    line-height: 25px;
+    margin-top: 10px;
+}
+.s100-store {
+    padding-top: 5px;
+    margin-top: 25px;
+    border-top: 1px solid #222;
+}
+.s100-link__item:active, .s100-link__item:focus, .s100-link__item:hover {
+    color: #fff;
+}
+.s100-link__item:active, .s100-link__item:focus, .s100-store__button:hover {
+    color: #fff;
+}
+
+
+
+
+.s102 {
+    background-color: #000;
+    color:#666;
+    border-top: 1px solid rgba(255,255,255,.15);
+}
+.s102 .footer-info {
+    text-align: left;
+    padding: 28px 15px 60px;
+    font-size:14px;
+}
+.s102 .footer-info .footer-policy__item:nth-child(1) {
+    color: #999;
+    font-weight:bold;
+}
+
+.s102 .footer-info .footer-policy__item:nth-child(n+2) {
+    position: relative;
+    margin-left: 25px;
+}
+.s102 .footer-info .footer-company {
+    margin-top: 12px;
+}
+.s102 .footer-info .footer-company__item:nth-child(n+2) {
+    position: relative;
+    margin-left: 25px;
+}
+.s102 .footer-info .footer-policy__item:nth-child(n+2):before {
+    top: 4px;
+}
+.s102 .footer-info .footer-policy__item:nth-child(n+2):before {
+    display: block;
+    position: absolute;
+    left: -13px;
+    width: 1px;
+    height: 12px;
+    background-color: #333;
+    content: "";
+}
+.s102 .footer-info .footer-company__item:nth-child(n+2):before {
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: -13px;
+    width: 1px;
+    height: 12px;
+    background-color: #333;
+    content: "";
+}
+.s102 .footer-info .footer-policy__item:focus, .s102 .footer-info .footer-policy__item:hover {
+    color: #fff !important;
+}
+
+.tol-inner2 {
+    position: absolute;
+    right: 15px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #073b6b;
+    text-align: center;
+    font-size: 1px;
+    color: transparent;
+    -webkit-box-shadow: 3px 3px 10px rgba(0,0,0,.4);
+    box-shadow: 3px 3px 10px rgba(0,0,0,.4);
+}
+.tol-inner2:before {
+    content: '';
+    display: block;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 31px;
+    background: url(https://www.lottehotel.com/content/dam/lottehotel/author/@temp/icon_livechat.png) no-repeat;
+    background-size: 30px 31px;
+    transform: translate(-50%,-50%);
+}
