@@ -13,20 +13,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://icono-49d6.kxcdn.com/icono.min.css">
     <link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
 
 
+
     <div class="topp">
 
         <div class="top-menu">
-            <div class="menu">신보듣기</div>
-            <div class="menu">레드벨벳 이야기</div>
-            <div class="menu">프로필</div>
-            <div class="menu">뮤직비디오</div>
-            <div class="menu">티켓예매</div>
+            <div class="menu"><a href="#a"><span>신보듣기</span></a></div>
+            <div class="menu"><a href="#b"><span>레드벨벳 이야기</span></a></div>
+            <div class="menu"><a href="#c"><span>프로필</span></a></div>
+            <div class="menu"><a href="#d"><span>뮤직비디오</span></a></div>
+            <div class="menu"><a href="#e"><span>티켓예매</span></a></div>
         </div>
 
 
@@ -106,7 +108,7 @@
 
 
 
-        <div class="sinbo">
+        <div class="sinbo" id="a">
             <h1>신보듣기</h1>
             <div class="caset">
                 <img src="https://user-images.githubusercontent.com/56675593/77140156-14961f00-6abc-11ea-9371-dbb498b22263.png" alt="">
@@ -119,24 +121,79 @@
                 <div class="f"><i class="fas fa-step-backward"></i></div>
                 <div class="l"><i class="fas fa-step-forward"></i></div>
             </div>
-            <div class="stop">
-                <div class="first"><i class="fas fa-play"></i></div>
-                <div class="last"><i class="fas fa-pause"></i></div>
+            <div class="audio-player" data-url="https://melon1004.github.io/portfolio/jm_pofol/velvet/psyco%20(online-audio-converter.com).mp3">
+                <div class="timeline">
+                    <div class="progress"></div>
+                </div>
+                <div class="controls">
+                    <div class="play-container">
+                        <div class="toggle-play play">
+                            <div class="pl"><i class="fas fa-play"></i></div>
+                            <div class="pa"><i class="fas fa-pause"></i></div>
+                        </div>
+                    </div>
+                    <div class="volume-container">
+
+                        <div class="volume-slider">
+                            <div class="volume-percentage"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="line">
-                <div class="line-start"></div>
-            </div>
-            <div class="gasa text-align-center">
-                <p>You got me feeling like a psycho psycho</p>
-                <p class="two">우릴 보고 말해 자꾸 자꾸 다시 안 볼 듯 싸우다가도</p>
-                <p>붙어 다니니 말야 이해가 안 간대 웃기지도 않대 </p>
+
+            <div class="songs">
+                <div class="song song-1">
+                    <div class="current-time"></div>
+                    <div class="text-prompter">
+                        <div data-start="0" class="txt active">
+                            Ooh-ooh, hey, yeah
+                            Hmm, yeah, psycho
+                        </div>
+                        <div data-start="11800" class="txt">
+                            널 어쩌면 좋을까
+                            이런 맘은 또 첨이라
+                        </div>
+                        <div data-start="17800" class="txt">
+                            Up and down이 좀 심해
+                            조절이 자꾸 잘 안돼
+                        </div>
+                        <div data-start="22000" class="txt">
+                            하나 확실한 건 I don't play the game
+                            우리 진짜 별나대
+                        </div>
+                        <div data-start="28000" class="txt">
+                            그냥 내가 너무 좋아해
+                            넌 그걸 너무 잘 알고
+                        </div>
+
+                        <div data-start="34000" class="txt">
+                            날 쥐락펴락해
+                            나도 마찬가지인걸 (Oh-oh-oh)
+                        </div>
+
+                        <div data-start="40000" class="txt">
+                            우린 참 별나고 이상한 사이야
+                            서로를 부서지게 (부서지게)
+                        </div>
+
+                        <div data-start="49000" class="txt">
+                            그리곤 또 껴안아 (그리곤 또 껴안아)
+                        </div>
+
+                        <div data-start="52000" data-end="56000" class="txt">
+                            You got me feeling like a psycho, psycho
+                        </div>
+                    </div>
+                    <div class="btn-play"></div>
+                    <div class="btn-stop"></div>
+                </div>
             </div>
         </div>
 
 
         <!--레드벨벳 이야기 -->
 
-        <div class="red" style="background-image:url(https://user-images.githubusercontent.com/56675593/77148532-14554e00-6ad3-11ea-8335-53a0732e0c87.jpg);">
+        <div class="red" id="b" style="background-image:url(https://user-images.githubusercontent.com/56675593/77148532-14554e00-6ad3-11ea-8335-53a0732e0c87.jpg);">
             <h1>레드벨벳 이야기</h1>
             <div class="box-2-warp box">
                 <div class="box-2">
@@ -263,7 +320,7 @@
 
     <!-- 프로필 아이린 -->
 
-    <div class="hue">
+    <div class="hue" id="c">
         <div class="profile">
             <h1 class="f-1">프로필</h1>
             <div class="box-1 con row active-on-visible" data-active-on-visible-diff-y="-100">
@@ -599,7 +656,7 @@
 
         <!--뮤직비디오 보기 -->
 
-        <div class="music" style="background-image:url(https://user-images.githubusercontent.com/56675593/77241942-c8261d00-6c3c-11ea-8e9d-a81179456f04.jpg);">
+        <div class="music" id="d" style="background-image:url(https://user-images.githubusercontent.com/56675593/77241942-c8261d00-6c3c-11ea-8e9d-a81179456f04.jpg);">
             <h1>뮤직비디오 보기</h1>
             <div class="img">
                 <img src="https://user-images.githubusercontent.com/56675593/77241940-c6f4f000-6c3c-11ea-99f6-27830e93504d.png" alt="">
@@ -620,7 +677,7 @@
 
         <!-- 예매하러가기 -->
 
-        <div class="concert" style="background-image:url(https://user-images.githubusercontent.com/56675593/77241946-ccead100-6c3c-11ea-9258-152c95b7966a.jpg);">
+        <div class="concert" id="e" style="background-image:url(https://user-images.githubusercontent.com/56675593/77241946-ccead100-6c3c-11ea-9258-152c95b7966a.jpg);">
             <h1>예매하러 가기</h1>
             <div class="img">
                 <img src="https://user-images.githubusercontent.com/56675593/77241938-c3f9ff80-6c3c-11ea-9220-cc20d5cc8d79.jpg" alt="">
@@ -684,6 +741,7 @@
                 <p class="p-1">개인정보처리방침</p>
                 <p>고객센터</p>
                 <p>Family site <p>▼</p>
+                </p>
             </div>
             <div class="pp">
                 <div class="p">
@@ -703,7 +761,8 @@
                 <img src="https://user-images.githubusercontent.com/56675593/77243948-13e3c100-6c53-11ea-9602-f8e0a82426a3.png" alt="">
             </div>
         </div>
-    </div>
+
+
 
 </body>
 <script src="index.js"></script>
