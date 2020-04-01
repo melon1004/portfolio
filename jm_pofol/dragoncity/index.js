@@ -1,42 +1,44 @@
-$('.slider > .pages > div').click(function () {
+$('.slider > .pages > div').click(function() {
     var $this = $(this);
     var $slider = $this.closest('.slider');
-
+    
     $this.addClass('active');
     $this.siblings('.active').removeClass('active');
-
+    
     var index = $this.index();
-
+    
     $slider.find(' > .slides > .active').removeClass('active');
     $slider.find(' > .slides > div').eq(index).addClass('active');
-
+    
     console.log(index);
     $('.full').attr('data-background-color', index);
 });
 
-$('.slider > .side-btns > div').click(function () {
+$('.slider > .side-btns > div').click(function() {
     var $this = $(this);
     var index = $this.index();
     var $slider = $this.closest('.slider');
-
+    
     var $current = $slider.find('.pages > div.active');
     var $post;
-
-    if (index == 0) {
+    
+    if ( index == 0 ) {
         $post = $current.prev();
-    } else {
+    }
+    else {
         $post = $current.next();
     }
-
-    if ($post.length == 0) {
-        if (index == 0) {
+    
+    if ( $post.length == 0 ) {
+        if ( index == 0 ) {
             $post = $slider.find('.pages > div:last-child');
-        } else {
+        }
+        else {
             $post = $slider.find('.pages > div:first-child');
         }
     }
-
-
+   
+    
     $post.click();
 });
 
@@ -48,43 +50,45 @@ function Slider1__moveNext() {
 
 setInterval(Slider1__moveNext, 3000);
 
-if ($('.full > .pages > div:first-child').hasClass('active')) {
-    $('.full').css('background-color', 'red');
+if ( $('.full > .pages > div:first-child').hasClass('active') ){
+    $('.full').css('background-color','red');
     alert('hi');
 }
 
 
 
 // $ => 포장하다.
-$('.sbs-slider > .side-bars > div').click(function () {
+$('.sbs-slider > .side-bars > div').click(function() {
     // this 클릭 당사자
     var $clickedBtn = $(this);
     // closest => 조상중에서 가장 가까운 엘리먼트 하나 찾아주세요.
     var $slider = $clickedBtn.closest('.sbs-slider');
-
+    
     //.index() => 형제번호
     var isLeft = $clickedBtn.index() == 0;
-
+    
     // find => 지역탐색
     // $currnet => 현재 active 된 녀석
     var $currnet = $slider.find('.slides > .active');
     // next => 다음 형제 가져와
     var $post = null;
-
-    if (isLeft) {
+    
+    if ( isLeft ) {
         $post = $currnet.prev();
-    } else {
+    }
+    else {
         $post = $currnet.next();
     }
-
-    if ($post.length == 0) {
-        if (isLeft) {
+    
+    if ( $post.length == 0 ) {
+        if ( isLeft ) {
             $post = $slider.find('.slides > div:last-child');
-        } else {
+        }
+        else {
             $post = $slider.find('.slides > div:first-child');
         }
     }
-
+    
     $currnet.removeClass('active');
     $post.addClass('active');
 });
@@ -100,16 +104,30 @@ $('.sbs-slider > .side-bars > div').click(function () {
 
 
 $('.my-1 > .owl-carousel').owlCarousel({
-    loop: true,
-    margin: 0,
-    nav: true,
-    dots: false,
-    responsive: {
-        0: {
-            items: 4
+    loop:true,
+    margin:0,
+    nav:true,
+    dots:false,
+    responsive:{
+        0:{
+            items:4
         }
     },
     center: true,
 });
 
 //$('.my-1 > .owl-carousel').trigger('to.owl.carousel', 1, 0);
+
+
+$(window).scroll(function() {
+    var scrollTop = $(window).scrollTop();
+    
+    //console.log(scrollTop);
+    
+    if ( scrollTop > 1100 ) {
+        $('.ll').addClass('active');
+    }
+    else {
+        $('.ll').removeClass('active');
+    }
+});
