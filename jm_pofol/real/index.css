@@ -586,7 +586,6 @@ a {
 #about > .profile > .img-box {
     max-width: 1903px;
     margin: 0 auto;
-    padding-top: 50px;
 }
 
 #about > .profile-1 > .img-box {
@@ -657,7 +656,7 @@ a {
 }
 
 #portfolio > .title {
-    padding-top: 400px;
+    padding-top: 300px;
 }
 
 
@@ -752,7 +751,7 @@ a {
 
 .por {
     text-align:center;
-    margin-top:15%;
+    margin-top:6%;
     margin-bottom:5%;
     border-bottom:4px solid #000;
 }
@@ -1055,7 +1054,7 @@ a {
 }
 
 #contact > .contact-box > .img-box {
-    max-width: 1200px;
+    max-width: 1903px;
     margin: 0 auto;
 }
 
@@ -1095,6 +1094,8 @@ a {
     background:#354ba1;
     width:1903px;
     height:1000px;
+    margin-top:-2%;
+    border-top:8px solid #000;
     border-bottom:8px solid #000;
 
 }
