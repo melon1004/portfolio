@@ -500,6 +500,11 @@ a {
         width: 440px;
     }
 }
+@media screen and (max-width: 523px) {
+    .wid {
+        margin-top:73%;
+    }
+}
 
 
 /* 도널드 */
