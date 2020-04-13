@@ -275,10 +275,25 @@ a {
     color:#000;
 }
 .day-3 > .bul {
-    margin-top:-43%;
+    margin-top:-41%;
     margin-left:45%;
     z-index:10;
     position:relative;
+}
+.day-3 > .bul:hover::after {
+    content: "클릭";
+    color: #fff;
+    text-align: center;
+    line-height: 43px;
+    position: absolute;
+    top: 35%;
+    left: 27%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 250px;
+    height: 43px;
+    z-index: 10;
+    background: rgba(0,0,0,.6);
+    border: 3px solid #fff;
 }
 
 .day-3 > .bul  > a > img {
