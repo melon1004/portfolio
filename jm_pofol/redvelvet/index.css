@@ -1257,12 +1257,13 @@ img.product-tb {
     border-bottom:10px solid #222;
 }
 .footer .img > img {
-    width:100px;
+    width:80px;
     margin-left:4%;
-    margin-top:3%;
+    margin-top:1%;
 }
 .footer .p {
-    margin-top:-6%;
+    margin-top:-5%;
+    font-size: 14px;
     margin-left:20%;
 }
 .footer .p  > p {
@@ -1286,7 +1287,7 @@ img.product-tb {
     margin-left:5%;
 }
 .footer .icon  > p  i {
-    font-size:32px;
+    font-size:21px;
 }
 .footer-1  {
     width:1903px;
