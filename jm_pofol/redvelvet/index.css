@@ -420,7 +420,7 @@ body {
 .sinbo > .start {
     color:#fff;
     font-size:30px;
-    margin-left:67.5%;
+    margin-left:68%;
     margin-top:8%;
 }
 .sinbo > .start  > div{
@@ -1259,7 +1259,7 @@ img.product-tb {
 .footer .img > img {
     width:80px;
     margin-left:4%;
-    margin-top:1%;
+    margin-top:3.3%;
 }
 .footer .p {
     margin-top:-5%;
@@ -1274,7 +1274,7 @@ img.product-tb {
     font-weight:bold;
 }
 .footer .pp {
-    margin-top:7%;
+    margin-top:6%;
     margin-left:2%;
     color:#222;
 }
@@ -1295,6 +1295,6 @@ img.product-tb {
     background:#ff6c00;
 }
 .footer-1 .img > img {
-    width:300px;
-    margin-top:1%;
+    width:200px;
+    margin-top:1.5%;
 }
