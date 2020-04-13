@@ -563,6 +563,7 @@ body {
     font-weight: 300;
     font-size: 13px;
     padding-top: 5px;
+    line-height: 32px;
 }
 
 .prod-box-1 > .my-carousel-box-1 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .item > ul > li:last-child:hover > a > h4 {
@@ -1428,6 +1429,7 @@ h3 {
     font-weight: bold;
     border: 1px solid #FFF;
     position: relative;
+    line-height: 50px;
 }
 
 .ttss > div > ul > li > .t > h4 {
