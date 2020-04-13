@@ -1090,6 +1090,9 @@ a {
     border-top:4px solid #000;
     margin-top:-5px;
 }
+.thank >div {
+    margin-top: 15px;
+}
 /* FOOTER */
 
 .footer {
