@@ -910,6 +910,9 @@ a {
 .top-box-1 .sbs-slider-2-1 > .slides > li:nth-child(9):hover > div > .bg-img::after {
     content:"리디자인";
 }
+.top-box-1 .sbs-slider-2-1 > .slides > li:nth-child(10):hover > div > .bg-img::after {
+    content:"리디자인";
+}
 .top-box-1 .sbs-slider-2-1 > .slides > li:hover > div > .bg-img.active::after{
     background:#fff;
     color:#000;
